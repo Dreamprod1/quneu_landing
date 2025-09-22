@@ -1,7 +1,10 @@
 import { Anta } from "next/font/google";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
-const anta = Anta({ weight: "400" });
+const anta = Anta({ 
+  weight: "400",
+  subsets: ["latin"]
+});
 
 const UseCasesSection = () => {
   return (

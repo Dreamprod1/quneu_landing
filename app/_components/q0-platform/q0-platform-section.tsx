@@ -1,7 +1,13 @@
 import { Anta, Noto_Sans } from "next/font/google";
 
-const anta = Anta({ weight: "400" });
-const noto = Noto_Sans({ weight: "400" });
+const anta = Anta({ 
+  weight: "400",
+  subsets: ["latin"]
+});
+const noto = Noto_Sans({ 
+  weight: "400",
+  subsets: ["latin"]
+});
 
 const Q0PlatformSection = () => {
   return (
