@@ -1,6 +1,9 @@
 import { Anta, Noto_Sans } from "next/font/google";
 
-const noto = Noto_Sans({ weight: ["400", "700"] });
+const noto = Noto_Sans({ 
+  weight: ["400", "700"],
+  subsets: ["latin"]
+});
 const anta = Anta({ weight: "400", subsets: ["latin"] });
 
 const GraphInfoSection = () => {

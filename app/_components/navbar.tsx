@@ -2,7 +2,10 @@ import { Noto_Sans } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
-const noto = Noto_Sans({ weight: "300" });
+const noto = Noto_Sans({ 
+  weight: "300",
+  subsets: ["latin"]
+});
 
 const Navbar = () => {
   return (
