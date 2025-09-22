@@ -2,10 +2,12 @@ import { Anta, Noto_Sans } from "next/font/google";
 
 const anta = Anta({
   weight: "400",
+  subsets: ["latin"]
 });
 
 const noto = Noto_Sans({
   weight: "300",
+  subsets: ["latin"]
 });
 
 const ContactSection = () => {
