@@ -1,4 +1,3 @@
-import Image from "next/image";
 import AboutSection from "./_components/about/about-section";
 import ContactSection from "./_components/contact/contact-section";
 import FoundersSection from "./_components/founders/founders-section";
@@ -6,10 +5,11 @@ import GraphInfoSection from "./_components/graph-info/graph-info-section";
 import HeroSection from "./_components/hero/hero-section";
 import MatDesignSection from "./_components/mat-design/mat-design-section";
 import MissionSection from "./_components/mission/mission-section";
+import QLMSection from "./_components/qlm/qlm-section";
 import Navbar from "./_components/navbar";
 import Q0PlatformSection from "./_components/q0-platform/q0-platform-section";
 import UseCasesSection from "./_components/use-cases/use-cases-section";
-
+//-----
 export default function Home() {
   return (
     <div className="font-sans grid grid-cols-1 min-h-screen">
@@ -18,6 +18,9 @@ export default function Home() {
       <AboutSection />
       <Q0PlatformSection />
       <GraphInfoSection />
+      {/* ----------- */}
+         <QLMSection />
+      {/* ----------- */}
       <MatDesignSection />
       <UseCasesSection />
       <MissionSection />
@@ -46,7 +49,6 @@ export default function Home() {
     //         Save and see your changes instantly.
     //       </li>
     //     </ol>
-
     //     <div className="flex gap-4 items-center flex-col sm:flex-row">
     //       <a
     //         className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"

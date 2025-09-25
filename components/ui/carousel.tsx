@@ -179,4 +179,41 @@ function CarouselNext({ className, variant = "outline", size = "icon", ...props 
   );
 }
 
-export { type CarouselApi, Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext };
+function CarouselDots({ className, ...props }: React.ComponentProps<"div">) {
+  const { api } = useCarousel();
+  const [dots, setDots] = React.useState<number[]>([]);
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
+
+  const onSelect = React.useCallback((api: CarouselApi) => {
+    setSelectedIndex(api.selectedScrollSnap());
+  }, []);
+
+  const onInit = React.useCallback((api: CarouselApi) => {
+    setDots(Array.from(Array(api.scrollSnapList().length).keys()));
+  }, []);
+
+  React.useEffect(() => {
+    if (!api) return;
+    onInit(api);
+    onSelect(api);
+    api.on("reInit", onInit);
+    api.on("reInit", onSelect);
+    api.on("select", onSelect);
+  }, [api, onInit, onSelect]);
+
+  return (
+    <div className={cn("flex justify-center gap-2 mt-4", className)} {...props}>
+      {dots.map((index) => (
+        <button
+          key={index}
+          onClick={() => api?.scrollTo(index)}
+          className={cn(
+            "size-3 rounded-full transition-colors border-2 border-white",
+            selectedIndex === index ? "bg-white" : "bg-transparent hover:bg-white/20"
+          )}
+        />
+      ))}
+    </div>
+  );
+}
+export { type CarouselApi, Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, CarouselDots };
