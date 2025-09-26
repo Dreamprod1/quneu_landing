@@ -185,10 +185,12 @@ function CarouselDots({ className, ...props }: React.ComponentProps<"div">) {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
 
   const onSelect = React.useCallback((api: CarouselApi) => {
+     if (!api) return;
     setSelectedIndex(api.selectedScrollSnap());
   }, []);
 
   const onInit = React.useCallback((api: CarouselApi) => {
+    if (!api) return;
     setDots(Array.from(Array(api.scrollSnapList().length).keys()));
   }, []);
 
