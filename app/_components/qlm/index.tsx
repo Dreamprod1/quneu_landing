@@ -4,7 +4,7 @@ const QLMSection = () => {
   return (
     <div className="relative bg-[#0E0E0E] h-full pt-5 pb-24 md:pb-36">
       <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-24">
-        <h2 className={`${anta.className} text-5xl md:text-7xl lg:text-9xl`}>QLM</h2>
+        <h2 className={`${anta.className} text-gray-100 text-5xl md:text-7xl lg:text-9xl`}>QLM</h2>
       </div>
       <div className="h-1 bg-white my-2 md:my-4"></div>
       <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-24">

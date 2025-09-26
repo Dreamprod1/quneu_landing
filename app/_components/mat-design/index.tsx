@@ -31,13 +31,13 @@ const MatDesignSection = () => {
           variants={containerVariants}
         >
           <motion.h3
-            className={`text-5xl md:text-6xl lg:text-8xl mb-6 md:mb-8 lg:mb-10 ${anta.className}}`}
+            className={`text-white text-5xl md:text-6xl lg:text-8xl mb-6 md:mb-8 lg:mb-10 ${anta.className}}`}
             variants={itemVariants}
           >
             Q0’s Intelligent Material Design
           </motion.h3>
           <motion.p
-            className="text-2xl md:text-3xl lg:text-4xl"
+            className="text-white text-2xl md:text-3xl lg:text-4xl"
             variants={itemVariants}
           >
             We have developed a groundbreaking AI platform that designs novel, high-performance materials from the ground up. Imagine an AI artist that can create a perfect, intricate
