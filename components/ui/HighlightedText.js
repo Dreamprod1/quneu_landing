@@ -1,4 +1,3 @@
-// components/HighlightedText.js
 "use client";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
@@ -22,8 +21,8 @@ export const HighlightedTextCyan = ({ text, delay = 0 }) => {
     return (
         <div ref={ref} className="relative inline-block overflow-hidden align-bottom">
             <span className="relative z-10">{text}</span>
-            <motion.span className={`absolute bottom-0 left-0 h-3 bg-[#62B8CC] opacity-60 rounded-md`} 
-             initial="hidden" animate={inView ? "visible" : "hidden"} variants={highlightVariants} custom={delay} />
+            <motion.span className={`absolute bottom-0 left-0 h-3 bg-[#62B8CC] opacity-60 rounded-md`}
+                initial="hidden" animate={inView ? "visible" : "hidden"} variants={highlightVariants} custom={delay} />
         </div>
     );
 };
@@ -34,8 +33,8 @@ export const HighlightedTextAmber = ({ text, delay = 0 }) => {
     return (
         <div ref={ref} className="relative inline-block overflow-hidden align-bottom">
             <span className="relative z-10">{text}</span>
-            <motion.span className={`absolute bottom-0 left-0 h-3 bg-[#AE2637] opacity-60 rounded-md`} 
-            initial="hidden" animate={inView ? "visible" : "hidden"} variants={highlightVariants} custom={delay} />
+            <motion.span className={`absolute bottom-0 left-0 h-3 bg-[#AE2637] opacity-60 rounded-md`}
+                initial="hidden" animate={inView ? "visible" : "hidden"} variants={highlightVariants} custom={delay} />
         </div>
     );
 };

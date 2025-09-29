@@ -1,5 +1,5 @@
 import { noto } from "@/lib/fonts";
-//---
+//___
 import Navbar from "./_components/navbar";
 import HeroSection from "./_components/hero";
 import AboutSection from "./_components/about";
@@ -14,18 +14,20 @@ import UseCasesSection from "./_components/use-cases";
 import MissionSection from "./_components/mission";
 import FoundersSection from "./_components/founders";
 import ContactSection from "./_components/contact";
-//-----
+//___
 export default function Home() {
   return (
-    <div className={`font-sans grid grid-cols-1 min-h-screen ${noto.className}`}>
+    <div className={`font-sans grid grid-cols-1  ${noto.className}`}>
       <Navbar />
       <HeroSection />
       <AboutSection />
       <Q0PlatformSection />
       <GraphInfoSection />
+
       <QunueProcess />
       <QLMSection />
       <CognitiveLayers />
+
       <QMATSection />
       <MatDesignSection />
       <UseCasesSection />
