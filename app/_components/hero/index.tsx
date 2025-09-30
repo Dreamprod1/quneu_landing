@@ -3,17 +3,15 @@ import React from "react";
 import { motion, useInView } from "framer-motion";
 import { anta } from "@/lib/fonts";
 import { ArrowDown } from "lucide-react";
-
 const HeroSection = () => {
   const fadeInLeft = {
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
   };
   const ref1 = React.useRef(null);
   const inView1 = useInView(ref1, { once: true, amount: 0.5 });
-
   return (
-    <div id="hero_section" className="bg-[url('/images/hero.png')] bg-cover bg-center bg-no-repeat h-screen flex flex-col items-center justify-end px-4 py-10  text-white overflow-hidden" >
+    <div id="hero_section" className="bg-[url('/images/hero.png')] bg-cover bg-center bg-no-repeat h-screen flex flex-col items-center justify-end px-8 py-10  text-white overflow-hidden" >
       <div className="container mx-auto text-center">
         <motion.div
           ref={ref1}
@@ -22,8 +20,8 @@ const HeroSection = () => {
           variants={fadeInLeft}
         >
           <h1 className={`${anta.className} text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl`}>
-            COGNITIVE INTELLIGENCE 
-            <br/>
+            COGNITIVE INTELLIGENCE
+            <br />
             FOR YOUR BUSINESS
           </h1>
         </motion.div>
@@ -37,5 +35,4 @@ const HeroSection = () => {
     </div>
   );
 };
-
 export default HeroSection;

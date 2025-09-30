@@ -2,22 +2,17 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
 import { anta } from "@/lib/fonts";
-
 const QMATSection = () => {
   const containerRef = React.useRef(null);
-  const isInView = useInView(containerRef, { once:false , amount: 0.3 });
-
-
+  const isInView = useInView(containerRef, { once: true, amount: 0.3 });
   const titleVariants = {
     initial: { opacity: 0, y: -50 },
     animate: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
-
   const textVariants = {
     initial: { opacity: 0, x: -50 },
     animate: { opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.3 } },
   };
-
   const cardContainerVariants = {
     initial: { opacity: 0 },
     animate: {
@@ -28,22 +23,21 @@ const QMATSection = () => {
       },
     },
   };
-
   const cardItemVariants = {
     initial: { opacity: 0, y: 50 },
     animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
-
   return (
     <div
       ref={containerRef} id="qmat_section"
-      className="relative bg-[url('/images/qmat-bg.png')] bg-no-repeat bg-cover pt-12 md:pt-16 pb-14 text-white overflow-hidden"
+      className="relative bg-[url('/images/qmat-bg.png')] bg-no-repeat bg-cover px-8 pt-12 md:pt-16 pb-14 text-white overflow-hidden"
     >
-      <div className="container mx-auto px-4 sm:px-6">
+      <div className="container mx-auto">
         <div>
           <div className="flex flex-col md:flex-row gap-5 items-center">
             <motion.h2
-              className={`${anta.className} text-5xl md:text-7xl lg:text-9xl 2xl:text-[180px] font-bold mb-2 tracking-tight`}
+              className={`${anta.className} font-bold mb-2 tracking-tight
+              text-5xl md:text-7xl lg:text-9xl 2xl:text-[180px]`}
               variants={titleVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
@@ -51,19 +45,21 @@ const QMATSection = () => {
               QMAT
             </motion.h2>
             <motion.h3
-              className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 text-stroke-light"
+              className="mb-4 text-stroke-light 
+              text-2xl md:text-3xl lg:text-4xl xl:text-5xl "
               variants={titleVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
             >
               UNLOCKING REVOLUTIONARY MATERIALS
-              <br/> WITH QUANTUM-INSPIRED AI
+              <br /> WITH QUANTUM-INSPIRED AI
             </motion.h3>
           </div>
         </div>
         <div>
           <motion.p
-            className="text-lg md:text-xl lg:text-2xl xl:text-3xl mb-10"
+            className="mb-10 
+            text-lg md:text-xl lg:text-2xl xl:text-3xl "
             variants={textVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
@@ -79,7 +75,6 @@ const QMATSection = () => {
           initial="initial"
           animate={isInView ? "animate" : "initial"}
         >
-
           <motion.div className="relative mb-10 w-full md:w-[28%]" variants={cardItemVariants}>
             <div className="relative flex justify-center mb-5">
               <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,10 +87,7 @@ const QMATSection = () => {
               <p className="text-base text-gray-100">Drastically cut down discovery time from years to weeks.</p>
             </div>
           </motion.div>
-
           <div className="relative w-1 top-[51px] bg-[#fcfeb2] hidden md:block" />
-
-
           <motion.div className="relative mb-10 w-full md:w-[32%]" variants={cardItemVariants}>
             <div className="relative flex justify-center mb-5">
               <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,10 +102,7 @@ const QMATSection = () => {
               <p className="text-base text-gray-100">Design custom materials with precisely targeted properties that don't exist today.</p>
             </div>
           </motion.div>
-
           <div className="relative w-1 top-[51px] bg-[#fcfeb2] hidden md:block" />
-
-
           <motion.div className="relative mb-10 w-full md:w-[33%]" variants={cardItemVariants}>
             <div className="relative flex justify-center mb-5">
               <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,14 +118,12 @@ const QMATSection = () => {
             </div>
           </motion.div>
         </motion.div>
-
         <motion.div
           className="-mt-1 relative flex flex-col md:flex-row flex-wrap gap-15"
           variants={cardContainerVariants}
           initial="initial"
           animate={isInView ? "animate" : "initial"}
         >
-
           <motion.div className="relative mb-10 w-full md:w-[33%]" variants={cardItemVariants}>
             <div className="relative flex justify-center mb-5">
               <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -152,7 +139,6 @@ const QMATSection = () => {
               <p className="text-base text-gray-100">Create next-generation products built from materials no one else has.</p>
             </div>
           </motion.div>
-
           <motion.div className="relative mb-10 w-full md:w-[55%]" variants={cardItemVariants}>
             <div className="relative flex justify-center mb-5">
               <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">

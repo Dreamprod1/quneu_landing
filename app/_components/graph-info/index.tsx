@@ -3,25 +3,25 @@ import React from "react";
 import { motion, useInView } from "framer-motion";
 import { anta } from "@/lib/fonts";
 import Image from "next/image";
-
 const GraphInfoSection = () => {
-  const fadeInLeft = { hidden: { opacity: 0, x: -200 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } };
-  const fadeInRight = { hidden: { opacity: 0, x: 200 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } };
+  const fadeInLeft = { hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } };
+  const fadeInRight = { hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } };
   const fadeInScale = { hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { duration: 1.0 } } };
-
   const refTitle = React.useRef(null);
   const inViewTitle = useInView(refTitle, { once: true, amount: 0.5 });
-
   const refImage = React.useRef(null);
   const inViewImage = useInView(refImage, { once: true, amount: 0.5 });
-
   const refParagraph = React.useRef(null);
   const inViewParagraph = useInView(refParagraph, { once: true, amount: 0.5 });
-
   return (
-    <div id="graph_info_section" className="relative bg-[#78BAC9] px-4 pt-16 md:pt-20 lg:pt-24  md:pb-20 lg:pb-24 xl:pb-32 2xl:pb-36 text-black overflow-hidden">
+    <div id="graph_info_section" className="relative bg-[#78BAC9] px-8 text-black overflow-hidden
+    pt-16 md:pt-20 lg:pt-24  
+    pb-10 sm:pb-12 md:pb-20 lg:pb-24 xl:pb-32 2xl:pb-36 
+    ">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 lg:gap-12 xl:gap-16">
+        <div className="flex flex-col items-center
+        md:flex-row  
+        gap-4 md:gap-8 lg:gap-12 xl:gap-16">
           <motion.div ref={refTitle} initial="hidden" animate={inViewTitle ? "visible" : "hidden"} variants={fadeInLeft}>
             <div className="flex flex-col">
               <h3 className={`${anta.className} text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[180px]`}>QGRAPH</h3>
@@ -44,5 +44,4 @@ const GraphInfoSection = () => {
     </div>
   );
 };
-
 export default GraphInfoSection;

@@ -2,11 +2,9 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
 import { anta } from "@/lib/fonts";
-
 const ContactSection = () => {
   const containerRef = React.useRef(null);
   const isInView = useInView(containerRef, { once: true, amount: 0.5 });
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -16,16 +14,14 @@ const ContactSection = () => {
       },
     },
   };
-
   const itemVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
-
   return (
     <div
       id="contact_section"
-      className="relative bg-[#0E0E0E]  flex items-center justify-center text-white overflow-hidden"
+      className="relative bg-[#0E0E0E] px-8 flex items-center justify-center text-white overflow-hidden"
     >
       <div
         ref={containerRef}
@@ -44,7 +40,12 @@ const ContactSection = () => {
             Join the Cognitive Graph Journey. <br /> Discover how QUNEU can accelerate your innovation cycles and unlock new possibilities.
           </motion.p>
           <motion.div variants={itemVariants}>
-            <button type="button" className={`${anta.className} bg-cyan-500 text-white text-3xl md:text-4xl lg:text-5xl rounded-xl px-10 md:px-12 lg:px-16 py-6 md:py-8 mt-16 md:mt-20 lg:mt-24 cursor-pointer hover:text-cyan-500 hover:bg-[#FFF] transition-colors`}
+            <button type="button"
+              className={`${anta.className} bg-cyan-500 text-white cursor-pointer hover:text-cyan-500 hover:bg-[#FFF] transition-colors
+            text-3xl md:text-4xl lg:text-5xl rounded-xl 
+            px-10  xl:px-16 
+            py-6 md:py-8 
+            mt-16 md:mt-20 lg:mt-24 `}
             >
               Schedule a demo
             </button>
@@ -54,5 +55,4 @@ const ContactSection = () => {
     </div>
   );
 };
-
 export default ContactSection;

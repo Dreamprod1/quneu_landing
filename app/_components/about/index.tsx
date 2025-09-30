@@ -3,7 +3,6 @@ import React from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { HighlightedTextAmber } from "@/components/ui/HighlightedText";
-
 const AboutSection = () => {
   const fadeInBottom = {
     hidden: { opacity: 0, y: 50 },
@@ -11,9 +10,8 @@ const AboutSection = () => {
   };
   const ref1 = React.useRef(null);
   const inView1 = useInView(ref1, { once: true, amount: 0.5 });
-
   return (
-    <div id="about_section" className="bg-[#060405] bg-cover bg-center h-full text-white flex flex-col items-center justify-center px-4 pt-12 pb-20 overflow-hidden" >
+    <div id="about_section" className="bg-[#060405] bg-cover bg-center h-full text-white flex flex-col items-center justify-center px-8 pt-12 pb-20 overflow-hidden" >
       <motion.div
         ref={ref1}
         initial="hidden"
@@ -21,7 +19,7 @@ const AboutSection = () => {
         variants={fadeInBottom}
         className="text-center  mt-16 mb-16"
       >
-        <Image src="/images/about-top-img.png" alt="shap" width={1444} height={19}  />
+        <Image src="/images/about-top-img.png" alt="shap" width={1444} height={19} />
       </motion.div>
       <div className="container mx-auto">
         <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">
@@ -32,7 +30,8 @@ const AboutSection = () => {
           <HighlightedTextAmber delay={1} text="processes, and data security," />
           to automatically and dynamically dissect and categorize your company’s data.
         </div>
-        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-6 md:mt-8 lg:mt-10">
+        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        mt-6 md:mt-8 lg:mt-10">
           How does it work?
           <HighlightedTextAmber delay={1} text="Q0 automatically creates proprietary ‘knowledge graphs’ —your business’s " />
           <HighlightedTextAmber delay={2} text="living map—by dynamically and semantically mapping all your enterprise data." />
@@ -44,5 +43,4 @@ const AboutSection = () => {
     </div>
   );
 };
-
 export default AboutSection;

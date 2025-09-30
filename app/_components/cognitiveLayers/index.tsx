@@ -1,15 +1,14 @@
 "use client";
+import "./style.css";
 import React from "react";
 import { motion, useInView } from "framer-motion";
 import { anta } from '@/lib/fonts';
 import Image from 'next/image';
 const CognitiveLayers = () => {
-  const fadeInLeft = { hidden: { opacity: 0, x: -200 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } };
-  const fadeInRight = { hidden: { opacity: 0, x: 200 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } };
-
+  const fadeInLeft = { hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } };
+  const fadeInRight = { hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } };
   const ref_titleDescript = React.useRef(null);
   const inView_titleDescript = useInView(ref_titleDescript, { once: true, amount: 0.5 });
-
   const ref_box_1 = React.useRef(null);
   const inView_box_1 = useInView(ref_box_1, { once: true, amount: 0.5 });
   const ref_box_2 = React.useRef(null);
@@ -18,7 +17,6 @@ const CognitiveLayers = () => {
   const inView_box_3 = useInView(ref_box_3, { once: true, amount: 0.5 });
   const ref_box_4 = React.useRef(null);
   const inView_box_4 = useInView(ref_box_4, { once: true, amount: 0.5 });
-
   const ref_chartItem_1 = React.useRef(null);
   const inView_chartItem_1 = useInView(ref_chartItem_1, { once: true, amount: 0.5 });
   const ref_chartItem_2 = React.useRef(null);
@@ -29,13 +27,16 @@ const CognitiveLayers = () => {
   const inView_chartItem_4 = useInView(ref_chartItem_4, { once: true, amount: 0.5 });
   const ref_chartItem_5 = React.useRef(null);
   const inView_chartItem_5 = useInView(ref_chartItem_5, { once: true, amount: 0.5 });
-
   return (
-    <div id="cognitive_layers" className="relative bg-[#EAEAEA] pt-12 md:pt-16 pb-24 md:pb-36 text-black overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6">
+    <div id="cognitive_layers" className="relative px-8 bg-[#EAEAEA] text-black overflow-hidden
+      pt-12 md:pt-16
+      pb-24 md:pb-36">
+      <div className="container mx-auto">
         <motion.div ref={ref_titleDescript} initial="hidden" animate={inView_titleDescript ? "visible" : "hidden"} variants={fadeInLeft}>
-          <h2 className="text-5xl md:text-7xl lg:text-9xl 2xl:text-[180] font-bold mb-6 tracking-tight"> COGNITIVE LAYERS </h2>
-          <h5 className="text-stroke-dark text-2xl md:text-5xl lg:text-7xl"> HOW Q0 THINKS </h5>
+          <h2 className="font-bold mb-6 tracking-tight
+          text-5xl md:text-7xl lg:text-9xl 2xl:text-[180]"> COGNITIVE LAYERS </h2>
+          <h5 className="text-stroke-dark
+          text-2xl md:text-5xl lg:text-7xl"> HOW Q0 THINKS </h5>
           <p className="text-2xl mt-6"> While your competitors wrestle with AI to update static ontology databases, Q0 operates on an entirely different principle. It doesn't just process your data—it cultivates living knowledge that grows stronger with every interaction. Q0's breakthrough architecture operates through four synchronized intelligence layers, each amplifying the others:</p>
         </motion.div>
         <div className="flex flex-col gap-8 mt-24">
@@ -51,10 +52,14 @@ const CognitiveLayers = () => {
                 <line x1="32.4611" y1="52.7337" x2="47.6359" y2="36.6763" stroke="black" />
               </svg>
             </div>
-            <motion.div ref={ref_box_1} initial="hidden" animate={inView_box_1 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 px-10 pt-8 pb-24 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-1.png')] bg-no-repeat bg-left-bottom">
-              <h3 className={`text-2xl md:text-4xl lg:text-6xl font-semibold mb-2 ${anta.className}`}>LAYER 1: THE EXPLORER BRAIN</h3>
-              <p className={`text-2xl md:text-3xl lg:text-5xl mb-4 ${anta.className}`}>(Autonomous Discovery)</p>
-              <div className='flex flex-col gap-6 text-1xl md:text-2xl lg:text-3xl'>
+            <motion.div ref={ref_box_1} initial="hidden" animate={inView_box_1 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-1.png')] bg-no-repeat bg-left-bottom
+              px-10 pt-8 pb-24">
+              <h3 className={`font-semibold mb-2 ${anta.className}
+              text-2xl md:text-4xl lg:text-6xl`}>LAYER 1: THE EXPLORER BRAIN</h3>
+              <p className={`mb-4 ${anta.className}
+              text-2xl md:text-3xl lg:text-5xl `}>(Autonomous Discovery)</p>
+              <div className='flex flex-col gap-6
+              text-1xl md:text-2xl lg:text-3xl'>
                 <p>Like a tireless researcher working 24/7, this layer continuously explores your data landscape, discovering connections before anyone even looks for them.</p>
                 <p><span className="font-bold">Business Impact:</span> Problems are identified before they become crises. Opportunities surface before competitors see them.</p>
               </div>
@@ -73,10 +78,14 @@ const CognitiveLayers = () => {
                 <line x1="53.2902" y1="33.0256" x2="64.1388" y2="25.0661" stroke="black" />
               </svg>
             </div>
-            <motion.div ref={ref_box_2} initial="hidden" animate={inView_box_2 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 px-10 pt-8 pb-24  border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-2.png')] bg-no-repeat bg-left-bottom-top">
-              <h3 className={`text-2xl md:text-4xl lg:text-6xl font-semibold mb-2 ${anta.className}`}>LAYER 2: THE INFINITY BRAIN</h3>
-              <p className={`text-2xl md:text-3xl lg:text-5xl mb-4 ${anta.className}`}>(Temporal Intelligence)</p>
-              <div className='flex flex-col gap-6 text-1xl md:text-2xl lg:text-3xl'>
+            <motion.div ref={ref_box_2} initial="hidden" animate={inView_box_2 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-2.png')] bg-no-repeat bg-left-bottom-top
+              px-10 pt-8 pb-24">
+              <h3 className={`font-semibold mb-2 ${anta.className}
+              text-2xl md:text-4xl lg:text-6xl `}>LAYER 2: THE INFINITY BRAIN</h3>
+              <p className={`mb-4 ${anta.className}
+              text-2xl md:text-3xl lg:text-5xl`}>(Temporal Intelligence)</p>
+              <div className='flex flex-col gap-6
+              text-1xl md:text-2xl lg:text-3xl'>
                 <p>This layer understands how your business evolves, learning the rhythms and patterns unique to your operations.</p>
                 <p><span className="font-bold">Business Impact:</span> Distinguishes real threats from normal fluctuations. Predicts future states with increasing accuracy.</p>
               </div>
@@ -94,10 +103,14 @@ const CognitiveLayers = () => {
                 <line x1="15.4859" y1="36.6964" x2="56.2188" y2="48.7765" stroke="black" />
               </svg>
             </div>
-            <motion.div initial="hidden" animate={inView_box_3 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 px-10 pt-8 pb-24  border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-3.png')] bg-no-repeat bg-left-bottom">
-              <h3 className={`text-2xl md:text-4xl lg:text-6xl font-semibold mb-2 ${anta.className}`}>LAYER 3: THE SCHOLAR BRAIN</h3>
-              <p className={`text-2xl md:text-3xl lg:text-5xl mb-4 ${anta.className}`}>(Validated Learning)</p>
-              <div className='flex flex-col gap-6 text-1xl md:text-2xl lg:text-3xl'>
+            <motion.div initial="hidden" animate={inView_box_3 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-3.png')] bg-no-repeat bg-left-bottom
+              px-10 pt-8 pb-24">
+              <h3 className={`font-semibold mb-2 ${anta.className}
+              text-2xl md:text-4xl lg:text-6xl`}>LAYER 3: THE SCHOLAR BRAIN</h3>
+              <p className={`mb-4 ${anta.className}
+              text-2xl md:text-3xl lg:text-5xl`}>(Validated Learning)</p>
+              <div className='flex flex-col gap-6
+              text-1xl md:text-2xl lg:text-3xl'>
                 <p>Every insight comes with a complete chain of reasoning. When experts provide feedback, this layer ensures the entire system learns, not just one model.</p>
                 <p> <span className="font-bold">Business Impact:</span> Builds trust through transparency. Ensures compliance through documented reasoning. Improves continuously through expert knowledge capture.</p>
               </div>
@@ -114,10 +127,14 @@ const CognitiveLayers = () => {
                 <line x1="31.7662" y1="28.5028" x2="66.8179" y2="33.8734" stroke="black" />
               </svg>
             </div>
-            <motion.div initial="hidden" animate={inView_box_4 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 px-10 pt-8 pb-24  border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-4.png')] bg-no-repeat bg-left-bottom">
-              <h3 className={`text-2xl md:text-4xl lg:text-6xl font-semibold mb-2 ${anta.className}`}>LAYER 4: THE DETECTIVE BRAIN</h3>
-              <p className={`text-2xl md:text-3xl lg:text-5xl mb-4 ${anta.className}`}>(Deep Connection Analysis)</p>
-              <div className='flex flex-col gap-6 text-1xl md:text-2xl lg:text-3xl'>
+            <motion.div initial="hidden" animate={inView_box_4 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-4.png')] bg-no-repeat bg-left-bottom
+              px-10 pt-8 pb-24">
+              <h3 className={`font-semibold mb-2 ${anta.className}
+              text-2xl md:text-4xl lg:text-6xl`}>LAYER 4: THE DETECTIVE BRAIN</h3>
+              <p className={`mb-4 ${anta.className}
+              text-2xl md:text-3xl lg:text-5xl`}>(Deep Connection Analysis)</p>
+              <div className='flex flex-col gap-6
+              text-1xl md:text-2xl lg:text-3xl'>
                 <p>Exploring millions of potential relationships, this layer uncovers the hidden connections that drive your business—the non-obvious links between distant departments, subtle correlations that predict major events.</p>
                 <p><span className="font-bold">Business Impact:</span> Discovers that customer service calls in Berlin predict supply chain disruptions in Bangkok. Finds the hidden leverage points that transform performance.</p>
               </div>
@@ -125,10 +142,12 @@ const CognitiveLayers = () => {
             <div className='absolute lef-0 w-[2px] -top-[10%] h-[130%] bg-black hidden md:block' />
           </div>
         </div>
+      </div>
+      <div className="container mx-auto">
         <div className="relative mt-16 cognitivelyaer-chart-wrapper">
-          <div className="absolute border-b-3 border-l-3 top-6 left-0 w-[46%] h-[40px] rounded-bl-2xl hidden md:block"></div>
-          <div className="absolute border-b-3 border-l-3 top-[5rem] left-[54%] w-[23%] h-[2px] rounded-bl-2xl hidden md:block"></div>
-          <div className="absolute left-[77%] top-[1rem] hidden md:block">
+          <div className="line-1"></div>
+          <div className="line-2"></div>
+          <div className="shap-1">
             <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="39" cy="39" r="37.75" stroke="black" strokeWidth="2.5" />
               <line x1="19.0931" y1="6.72891" x2="57.9319" y2="72.7553" stroke="black" />
@@ -136,7 +155,7 @@ const CognitiveLayers = () => {
               <line x1="31.7662" y1="28.5028" x2="66.8179" y2="33.8734" stroke="black" />
             </svg>
           </div>
-          <div className="absolute left-[61%] top-[10rem] hidden md:block">
+          <div className="shap-2">
             <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="39" cy="39" r="37.75" stroke="black" strokeWidth="2.5" />
               <line x1="76.1113" y1="36.3828" x2="1.19586" y2="37.5124" stroke="black" />
@@ -146,7 +165,7 @@ const CognitiveLayers = () => {
               <line x1="32.4608" y1="52.7337" x2="47.6356" y2="36.6763" stroke="black" />
             </svg>
           </div>
-          <div className="absolute left-[39%] top-[22rem] hidden md:block">
+          <div className="shap-3">
             <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="39" cy="39" r="37.75" stroke="black" strokeWidth="2.5" />
               <line x1="59.8589" y1="6.96197" x2="71.8047" y2="56.1031" stroke="black" />
@@ -156,7 +175,7 @@ const CognitiveLayers = () => {
               <line x1="53.2902" y1="33.0256" x2="64.1388" y2="25.0661" stroke="black" />
             </svg>
           </div>
-          <div className="absolute left-[22%] top-[36rem] hidden md:block">
+          <div className="shap-4">
             <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="39" cy="39" r="37.75" stroke="black" strokeWidth="2.5" />
               <line x1="6.51691" y1="18.7348" x2="76.5218" y2="41.6562" stroke="black" />
@@ -164,43 +183,56 @@ const CognitiveLayers = () => {
               <line x1="52.381" y1="33.6531" x2="60.7443" y2="68.8845" stroke="black" />
               <line x1="15.4859" y1="36.6964" x2="56.2188" y2="48.7765" stroke="black" />
             </svg>
-
           </div>
-          <div className="absolute left-[62%] top-[46rem] hidden md:block">
+          <div className="shap-5">
             <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="39" cy="39" r="37.75" stroke="black" strokeWidth="2.5" />
               <line x1="19.0931" y1="6.72891" x2="57.9319" y2="72.7553" stroke="black" />
               <line x1="44.3821" y1="49.0676" x2="74.5603" y2="28.4582" stroke="black" />
               <line x1="31.7662" y1="28.5028" x2="66.8179" y2="33.8734" stroke="black" />
             </svg>
-
           </div>
-          {/* <motion.div className="absolute left-[23%] top-[16rem] bg-[#EAEAEA]" ref={ref_chartItem_1} initial="hidden" animate={inView_chartItem_1 ? "visible" : "hidden"} variants={fadeInRight}>
-             Data Ingestion
+          <motion.div
+            className="item_1 bg-[#EAEAEA]"
+            ref={ref_chartItem_1} initial="hidden" animate={inView_chartItem_1 ? "visible" : "hidden"} variants={fadeInRight}>
+            Data Ingestion
           </motion.div>
-          <motion.div className="absolute left-[53%] top-[16rem]bg-[#78BAC9]" ref={ref_chartItem_1} initial="hidden" animate={inView_chartItem_1 ? "visible" : "hidden"} variants={fadeInRight}>
-             Explorer Brain
+          <motion.div
+            className="item_2 bg-[#78BAC9]"
+            ref={ref_chartItem_1} initial="hidden" animate={inView_chartItem_1 ? "visible" : "hidden"} variants={fadeInRight}>
+            Explorer Brain
           </motion.div>
-
-          <motion.div className="absolute left-[16%] top-[21rem]bg-[#EAEAEA] text-[#51AABE]" ref={ref_chartItem_2} initial="hidden" animate={inView_chartItem_2 ? "visible" : "hidden"} variants={fadeInRight}>
-             Security
+          <motion.div
+            className="item_3 bg-[#EAEAEA] text-[#51AABE]"
+            ref={ref_chartItem_2} initial="hidden" animate={inView_chartItem_2 ? "visible" : "hidden"} variants={fadeInRight}>
+            Security
           </motion.div>
-          <motion.div className="absolute right-[16%] top-[21rem]" ref={ref_chartItem_2} initial="hidden" animate={inView_chartItem_2 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="border-2 border-dashed border-black  font-bold text-center bg-[#EAEAEA] text-[#51AABE]"> Security</div>
+          <motion.div
+            className="item_4 bg-[#EAEAEA] text-[#51AABE]"
+            ref={ref_chartItem_2} initial="hidden" animate={inView_chartItem_2 ? "visible" : "hidden"} variants={fadeInRight}>
+            Security
           </motion.div>
-          <motion.div className="absolute left-[41%] top-[28rem]" ref={ref_chartItem_3} initial="hidden" animate={inView_chartItem_3 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="border-2 border-black  font-bold text-center bg-[#85B1CF]"> Infinity Brain</div>
+          <motion.div
+            className="item_5 bg-[#85B1CF]"
+            ref={ref_chartItem_3} initial="hidden" animate={inView_chartItem_3 ? "visible" : "hidden"} variants={fadeInRight}>
+            Infinity Brain
           </motion.div>
-          <motion.div className="absolute right-[42%] top-[37rem]" ref={ref_chartItem_4} initial="hidden" animate={inView_chartItem_4 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="border-2 border-dashed border-black  font-bold text-center bg-[#EAEAEA] text-[#51AABE]"> Security</div>
+          <motion.div
+            className="item_6 bg-[#EAEAEA] text-[#51AABE]"
+            ref={ref_chartItem_4} initial="hidden" animate={inView_chartItem_4 ? "visible" : "hidden"} variants={fadeInRight}>
+            Security
           </motion.div>
-          <motion.div className="absolute left-[21%] top-[42rem]" ref={ref_chartItem_5} initial="hidden" animate={inView_chartItem_5 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="border-2 border-black  font-bold text-center bg-[#809DD4]"> Scholar Brain</div>
+          <motion.div
+            className="item_7 bg-[#809DD4]"
+            ref={ref_chartItem_5} initial="hidden" animate={inView_chartItem_5 ? "visible" : "hidden"} variants={fadeInRight}>
+            Scholar Brain
           </motion.div>
-          <motion.div className="absolute right-[22%] top-[41rem]" ref={ref_chartItem_5} initial="hidden" animate={inView_chartItem_5 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="border-2 border-black  font-bold text-center bg-[#8D98D2]"> Detective Brain</div>
-          </motion.div> */}
-          <Image src="/images/cognitevieLayers-chart-1.png" alt="cogniteve layers chart" width={1756} height={1439} ></Image>
+          <motion.div
+            className="item_8 bg-[#8D98D2]"
+            ref={ref_chartItem_5} initial="hidden" animate={inView_chartItem_5 ? "visible" : "hidden"} variants={fadeInRight}>
+            Detective Brain
+          </motion.div>
+          <Image src="/images/cognitevieLayers-chart-1.png" alt="cogniteve layers chart" width={1754} height={1439} ></Image>
         </div>
       </div>
     </div>
