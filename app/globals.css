@@ -26,3 +26,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.text-stroke-dark {
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+}
+.text-stroke-light {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
