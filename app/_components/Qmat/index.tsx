@@ -43,7 +43,7 @@ const QMATSection = () => {
         <div>
           <div className="flex flex-col md:flex-row gap-5 items-center">
             <motion.h2
-              className={`${anta.className} text-5xl md:text-7xl lg:text-9xl font-bold mb-2 tracking-tight`}
+              className={`${anta.className} text-5xl md:text-7xl lg:text-9xl 2xl:text-[180px] font-bold mb-2 tracking-tight`}
               variants={titleVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
@@ -51,18 +51,19 @@ const QMATSection = () => {
               QMAT
             </motion.h2>
             <motion.h3
-              className="text-2xl md:text-3xl lg:text-4xl mb-4 text-stroke-light"
+              className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-4 text-stroke-light"
               variants={titleVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
             >
-              UNLOCKING REVOLUTIONARY MATERIALS WITH QUANTUM-INSPIRED AI
+              UNLOCKING REVOLUTIONARY MATERIALS
+              <br/> WITH QUANTUM-INSPIRED AI
             </motion.h3>
           </div>
         </div>
         <div>
           <motion.p
-            className="text-lg md:text-xl lg:text-2xl mb-10"
+            className="text-lg md:text-xl lg:text-2xl xl:text-3xl mb-10"
             variants={textVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}

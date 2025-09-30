@@ -13,18 +13,13 @@ const AboutSection = () => {
   const inView1 = useInView(ref1, { once: true, amount: 0.5 });
 
   return (
-    <div
-      id="about_section"
-      className="bg-[#060405] bg-cover bg-center h-full text-white flex flex-col items-center justify-center 
-                 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24
-                 pt-12 pb-20 md:pb-32 overflow-hidden"
-    >
+    <div id="about_section" className="bg-[#060405] bg-cover bg-center h-full text-white flex flex-col items-center justify-center px-4 pt-12 pb-20 overflow-hidden" >
       <motion.div
         ref={ref1}
         initial="hidden"
         animate={inView1 ? "visible" : "hidden"}
         variants={fadeInBottom}
-        className="text-center mb-8 md:mb-10 lg:mb-12"
+        className="text-center  mt-16 mb-16"
       >
         <Image src="/images/about-top-img.png" alt="shap" width={1444} height={19}  />
       </motion.div>

@@ -14,8 +14,8 @@ const UseCasesSection = () => {
   return (
     <div id="use_cases_section" className="relative bg-[#0E0E0E] h-full flex flex-col pt-16 md:pt-24 lg:pt-32 pb-10 overflow-hidden">
       <div className="flex justify-end items-end">
-        <h2 className={`${anta.className} text-white text-5xl md:text-7xl lg:text-9xl`}>USE CASES</h2>
-        <div className="w-full md:w-1/2 flex flex-col gap-2 justify-end mb-4">
+        <h2 className={`${anta.className} text-white text-5xl md:text-7xl lg:text-9xl 2xl:text-[180px]`}>USE CASES</h2>
+        <div className="w-full md:w-1/3 flex flex-col gap-2 justify-end mb-4">
           <div className="flex-grow h-1 bg-white "></div>
           <div className="flex-grow h-1 bg-white "></div>
         </div>

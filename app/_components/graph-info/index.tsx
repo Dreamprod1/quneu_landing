@@ -19,15 +19,12 @@ const GraphInfoSection = () => {
   const inViewParagraph = useInView(refParagraph, { once: true, amount: 0.5 });
 
   return (
-    <div
-      id="graph_info_section"
-      className="relative bg-[#78BAC9] px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-16 md:py-20 lg:py-24 text-black overflow-hidden"
-    >
+    <div id="graph_info_section" className="relative bg-[#78BAC9] px-4 pt-16 md:pt-20 lg:pt-24  md:pb-20 lg:pb-24 xl:pb-32 2xl:pb-36 text-black overflow-hidden">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 lg:gap-12 xl:gap-16">
           <motion.div ref={refTitle} initial="hidden" animate={inViewTitle ? "visible" : "hidden"} variants={fadeInLeft}>
             <div className="flex flex-col">
-              <h3 className={`${anta.className} text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl`}>QGRAPH</h3>
+              <h3 className={`${anta.className} text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[180px]`}>QGRAPH</h3>
               <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-stroke-dark">THE POWER OF QGRAPH</p>
             </div>
           </motion.div>
@@ -35,7 +32,7 @@ const GraphInfoSection = () => {
             <Image src="/images/QGRAPH-patters.png" alt="graph" width={779} height={308} />
           </motion.div>
         </div>
-        <motion.div ref={refParagraph} initial="hidden" animate={inViewParagraph ? "visible" : "hidden"} variants={fadeInScale} className="mt-10 md:mt-12 lg:mt-16">
+        <motion.div ref={refParagraph} initial="hidden" animate={inViewParagraph ? "visible" : "hidden"} variants={fadeInScale} className="mt-10 md:mt-12 lg:mt-20">
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl">
             Q0 demystifies the process of knowledge graph creation by automatically providing a dynamic representation of data processing events and contextual reasoning, and allows
             your business to intelligently grow, eliminating uncertainties in a secure and cost-efficient way. With Q0, your organization gains more than insights — it builds a neural

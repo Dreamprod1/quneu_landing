@@ -34,7 +34,7 @@ const CognitiveLayers = () => {
     <div id="cognitive_layers" className="relative bg-[#EAEAEA] pt-12 md:pt-16 pb-24 md:pb-36 text-black overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         <motion.div ref={ref_titleDescript} initial="hidden" animate={inView_titleDescript ? "visible" : "hidden"} variants={fadeInLeft}>
-          <h2 className="text-5xl md:text-7xl lg:text-9xl font-bold mb-6 tracking-tight"> COGNITIVE LAYERS </h2>
+          <h2 className="text-5xl md:text-7xl lg:text-9xl 2xl:text-[180] font-bold mb-6 tracking-tight"> COGNITIVE LAYERS </h2>
           <h5 className="text-stroke-dark text-2xl md:text-5xl lg:text-7xl"> HOW Q0 THINKS </h5>
           <p className="text-2xl mt-6"> While your competitors wrestle with AI to update static ontology databases, Q0 operates on an entirely different principle. It doesn't just process your data—it cultivates living knowledge that grows stronger with every interaction. Q0's breakthrough architecture operates through four synchronized intelligence layers, each amplifying the others:</p>
         </motion.div>
@@ -125,7 +125,7 @@ const CognitiveLayers = () => {
             <div className='absolute lef-0 w-[2px] -top-[10%] h-[130%] bg-black hidden md:block' />
           </div>
         </div>
-        <div className="relative mt-16">
+        <div className="relative mt-16 cognitivelyaer-chart-wrapper">
           <div className="absolute border-b-3 border-l-3 top-6 left-0 w-[46%] h-[40px] rounded-bl-2xl hidden md:block"></div>
           <div className="absolute border-b-3 border-l-3 top-[5rem] left-[54%] w-[23%] h-[2px] rounded-bl-2xl hidden md:block"></div>
           <div className="absolute left-[77%] top-[1rem] hidden md:block">
@@ -175,31 +175,31 @@ const CognitiveLayers = () => {
             </svg>
 
           </div>
-          <motion.div className="absolute left-[23%] top-[16rem] hidden md:block" ref={ref_chartItem_1} initial="hidden" animate={inView_chartItem_1 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="py-2 px-4 md:py-3 md:px-6 lg:py-5 lg:px-12  rounded-[30px] border-2 border-dashed border-black text-lg md:text-xl lg:text-3xl t font-bold text-center bg-[#EAEAEA]"> Data Ingestion</div>
+          {/* <motion.div className="absolute left-[23%] top-[16rem] bg-[#EAEAEA]" ref={ref_chartItem_1} initial="hidden" animate={inView_chartItem_1 ? "visible" : "hidden"} variants={fadeInRight}>
+             Data Ingestion
           </motion.div>
-          <motion.div className="absolute left-[53%] top-[16rem] hidden md:block" ref={ref_chartItem_1} initial="hidden" animate={inView_chartItem_1 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="py-2 px-4 md:py-3 md:px-6 lg:py-5 lg:px-12  rounded-[30px] border-2 border-black text-lg md:text-xl lg:text-3xl t font-bold text-center bg-[#78BAC9]"> Explorer Brain</div>
+          <motion.div className="absolute left-[53%] top-[16rem]bg-[#78BAC9]" ref={ref_chartItem_1} initial="hidden" animate={inView_chartItem_1 ? "visible" : "hidden"} variants={fadeInRight}>
+             Explorer Brain
           </motion.div>
 
-          <motion.div className="absolute left-[16%] top-[21rem] hidden md:block" ref={ref_chartItem_2} initial="hidden" animate={inView_chartItem_2 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="py-2 px-4 md:py-3 md:px-6 lg:py-5 lg:px-12  rounded-[30px] border-2 border-dashed border-black text-lg md:text-xl lg:text-3xl t font-bold text-center bg-[#EAEAEA] text-[#51AABE]"> Security</div>
+          <motion.div className="absolute left-[16%] top-[21rem]bg-[#EAEAEA] text-[#51AABE]" ref={ref_chartItem_2} initial="hidden" animate={inView_chartItem_2 ? "visible" : "hidden"} variants={fadeInRight}>
+             Security
           </motion.div>
-          <motion.div className="absolute right-[16%] top-[21rem] hidden md:block" ref={ref_chartItem_2} initial="hidden" animate={inView_chartItem_2 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="py-2 px-4 md:py-3 md:px-6 lg:py-5 lg:px-12  rounded-[30px] border-2 border-dashed border-black text-lg md:text-xl lg:text-3xl t font-bold text-center bg-[#EAEAEA] text-[#51AABE]"> Security</div>
+          <motion.div className="absolute right-[16%] top-[21rem]" ref={ref_chartItem_2} initial="hidden" animate={inView_chartItem_2 ? "visible" : "hidden"} variants={fadeInRight}>
+            <div className="border-2 border-dashed border-black  font-bold text-center bg-[#EAEAEA] text-[#51AABE]"> Security</div>
           </motion.div>
-          <motion.div className="absolute left-[41%] top-[28rem] hidden md:block" ref={ref_chartItem_3} initial="hidden" animate={inView_chartItem_3 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="py-2 px-4 md:py-3 md:px-6 lg:py-5 lg:px-12  rounded-[30px] border-2 border-black text-lg md:text-xl lg:text-3xl t font-bold text-center bg-[#85B1CF]"> Infinity Brain</div>
+          <motion.div className="absolute left-[41%] top-[28rem]" ref={ref_chartItem_3} initial="hidden" animate={inView_chartItem_3 ? "visible" : "hidden"} variants={fadeInRight}>
+            <div className="border-2 border-black  font-bold text-center bg-[#85B1CF]"> Infinity Brain</div>
           </motion.div>
-          <motion.div className="absolute right-[42%] top-[37rem] hidden md:block" ref={ref_chartItem_4} initial="hidden" animate={inView_chartItem_4 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="py-2 px-4 md:py-3 md:px-6 lg:py-5 lg:px-12  rounded-[30px] border-2 border-dashed border-black text-lg md:text-xl lg:text-3xl t font-bold text-center bg-[#EAEAEA] text-[#51AABE]"> Security</div>
+          <motion.div className="absolute right-[42%] top-[37rem]" ref={ref_chartItem_4} initial="hidden" animate={inView_chartItem_4 ? "visible" : "hidden"} variants={fadeInRight}>
+            <div className="border-2 border-dashed border-black  font-bold text-center bg-[#EAEAEA] text-[#51AABE]"> Security</div>
           </motion.div>
-          <motion.div className="absolute left-[21%] top-[42rem] hidden md:block" ref={ref_chartItem_5} initial="hidden" animate={inView_chartItem_5 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="py-2 px-4 md:py-3 md:px-6 lg:py-5 lg:px-12  rounded-[30px] border-2 border-black text-lg md:text-xl lg:text-3xl t font-bold text-center bg-[#809DD4]"> Scholar Brain</div>
+          <motion.div className="absolute left-[21%] top-[42rem]" ref={ref_chartItem_5} initial="hidden" animate={inView_chartItem_5 ? "visible" : "hidden"} variants={fadeInRight}>
+            <div className="border-2 border-black  font-bold text-center bg-[#809DD4]"> Scholar Brain</div>
           </motion.div>
-          <motion.div className="absolute right-[22%] top-[41rem] hidden md:block" ref={ref_chartItem_5} initial="hidden" animate={inView_chartItem_5 ? "visible" : "hidden"} variants={fadeInRight}>
-            <div className="py-2 px-4 md:py-3 md:px-6 lg:py-5 lg:px-12  rounded-[30px] border-2 border-black text-lg md:text-xl lg:text-3xl t font-bold text-center bg-[#8D98D2]"> Detective Brain</div>
-          </motion.div>
+          <motion.div className="absolute right-[22%] top-[41rem]" ref={ref_chartItem_5} initial="hidden" animate={inView_chartItem_5 ? "visible" : "hidden"} variants={fadeInRight}>
+            <div className="border-2 border-black  font-bold text-center bg-[#8D98D2]"> Detective Brain</div>
+          </motion.div> */}
           <Image src="/images/cognitevieLayers-chart-1.png" alt="cogniteve layers chart" width={1756} height={1439} ></Image>
         </div>
       </div>

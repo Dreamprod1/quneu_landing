@@ -26,7 +26,7 @@ const MatDesignSection = () => {
   return (
     <div
       id="mat_design_section"
-      className="relative bg-[url(/images/mat-design.jpg)] bg-center bg-cover bg-no-repeat bg-fixed  text-justify flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-16 md:py-20 overflow-hidden"
+      className="relative bg-[url(/images/mat-design.jpg)] bg-center bg-cover bg-no-repeat bg-fixed  text-justify flex flex-col items-center justify-center px-4 sm:px-8  py-16 md:py-20 overflow-hidden"
     >
       <div className="container mx-auto max-w-screen-xl gap-6 md:gap-8 lg:gap-10" ref={ref}>
         <motion.div

@@ -5,14 +5,7 @@ import Image from "next/image";
 
 const Q0PlatformSection = () => {
   return (
-    <div
-      id="Q0_platform_section"
-      className="relative bg-[#EAEAEA] 
-                 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 
-                 pt-12 md:pt-16 lg:pt-20 pb-24 md:pb-32 lg:pb-40
-                 text-[#060405] overflow-hidden"
-    >
-      
+    <div id="Q0_platform_section" className="relative bg-[#EAEAEA] px-4 pt-12 md:pt-16 lg:pt-20 pb-24 md:pb-32 lg:pb-40 text-[#060405] overflow-hidden" >
       <Image
         src="/images/topleft-corner-linegroup.png"
         alt="shap"
@@ -30,7 +23,7 @@ const Q0PlatformSection = () => {
       />
       
       <div className="container mx-auto">
-        <h3 className={`${anta.className} text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl`}>
+        <h3 className={`${anta.className} text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[200px]`}>
           Q0 Platform
         </h3>
         <div className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-7xl  mt-4">
@@ -40,7 +33,7 @@ const Q0PlatformSection = () => {
           <HighlightedTextCyan delay={0} text="Q0 automatically extracts and continuously evolves business knowledge from all data sources." />
           The platform's Dynamic Knowledge Graph actively
         </div>
-        <div className={`${anta.className} relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-6 md:mt-8 lg:mt-10 leading-snug`}>
+        <div className={`${anta.className} relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-6 md:mt-8 lg:mt-10`}>
           <HighlightedTextCyan delay={1} text="discovers hidden connections, predicts emerging" />
           <HighlightedTextCyan delay={1} text="patterns, and generates hypotheses your teams" />
           <HighlightedTextCyan delay={2} text="haven't thought to explore." />

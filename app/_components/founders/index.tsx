@@ -44,7 +44,7 @@ const FoundersSection = () => {
           animate={isInView ? "visible" : "hidden"}
           variants={itemVariants}
         >
-          <h2 className={`${anta.className} text-5xl md:text-7xl lg:text-9xl`}>FOUNDERS</h2>
+          <h2 className={`${anta.className} text-5xl md:text-7xl lg:text-9xl xl:text-[180px]`}>FOUNDERS</h2>
         </motion.div>
 
         <motion.div

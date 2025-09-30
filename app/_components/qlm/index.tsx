@@ -33,7 +33,7 @@ const QLMSection = () => {
       ref={containerRef} id="qlm_section"
       className="relative bg-[#0E0E0E] h-full pt-5 pb-24 md:pb-36 text-white overflow-hidden"
     >
-      <div className="relative container mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 flex items-center">
+      <div className="relative container mx-auto px-4 sm:px-8 flex items-center">
         <motion.h2
           className={`${anta.className} text-gray-100 text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl`}
           variants={headingVariants}
@@ -49,7 +49,7 @@ const QLMSection = () => {
           animate={isInView ? "animate" : "initial"}
         />
         <motion.div
-          className='absolute right-1 top-[49%] h-[101px] w-[110px] border-r-3 border-t-3 rounded-tr-xl hidden lg:block'
+          className='absolute right-1 top-[49%] h-[133px] w-[110px] border-r-3 border-t-3 rounded-tr-xl hidden lg:block'
           variants={lineVariants}
           initial="initial"
           animate={isInView ? "animate" : "initial"}
@@ -61,17 +61,17 @@ const QLMSection = () => {
         initial="initial"
         animate={isInView ? "animate" : "initial"}
       ></motion.div>
-      <div className="relative container mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24">
+      <div className="relative container mx-auto px-4 sm:px-8 mt-12">
         <motion.div
           className="flex flex-col border rounded-2xl p-6 md:p-9 gap-4 md:gap-6"
           variants={boxVariants}
           initial="initial"
           animate={isInView ? "animate" : "initial"}
         >
-          <h3 className={`${anta.className} text-xl sm:text-2xl md:text-3xl`}>
+          <h3 className={`${anta.className} text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl`}>
             04 GROWTH & HYPOTHESIS CREATION
           </h3>
-          <p className="text-sm sm:text-base md:text-lg">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl">
             QLM analyzes your business questions by processing all available data
             and generating unlimited hypotheses about potential causes and
             solutions. It systematically tests each possibility against the
@@ -96,10 +96,8 @@ const QLMSection = () => {
         <div className="flex justify-end">
           <motion.button
             type="button"
-            className={`${anta.className} text-black bg-white border-2 rounded-full 
-                        px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-5
-                        mt-10 sm:mt-12 md:mt-16 lg:mt-20
-                        cursor-pointer flex items-center justify-center space-x-2`}
+            className={`${anta.className} text-black bg-white border-2 rounded-2xl px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-5 mt-8  cursor-pointer flex items-center justify-center space-x-2`}
+
             variants={buttonVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}

@@ -33,7 +33,7 @@ const MissionSection = () => {
   const inView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-    <div id="mission_section" className="bg-[#0E0E0E]  px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 flex flex-col pt-16 md:pt-32 pb-7 overflow-hidden">
+    <div id="mission_section" className="bg-[#0E0E0E]  px-4 sm:px-8 flex flex-col pt-16 md:pt-32 pb-7 overflow-hidden">
       <div className="container mx-auto" ref={ref}>
         <motion.div
           className="flex flex-col lg:flex-row items-stretch gap-8 md:gap-12 lg:gap-20"
@@ -46,9 +46,9 @@ const MissionSection = () => {
             <div className="flex flex-col items-center">
               <MissionIcon />
             </div>
-            <h3 className={`${anta.className} text-2xl md:text-3xl text-white text-center mt-3`}>OUR VISION</h3>
-            <div className="mt-3 md:mt-5 border rounded-2xl p-6 md:p-9 pb-10 md:pb-14 flex-1 flex items-center bg-[url('/images/mission-box-bg-1.png')] bg-right-bottom bg-no-repeat">
-              <p className="text-base md:text-lg text-white">To create a world where every organization has autonomous intelligence that grows smarter every day—transforming business complexity into competitive advantage, accelerating human discovery across all industries, and establishing the foundation for truly intelligent enterprises that think, learn, and innovate at the speed of possibility</p>
+            <h3 className={`${anta.className} text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white text-center mt-3`}>OUR VISION</h3>
+            <div className="mt-3 md:mt-5 border rounded-2xl p-6 md:p-9 pb-10 md:pb-14 lg:pb-16 xl:pb-28 flex-1 flex items-center bg-[url('/images/mission-box-bg-1.png')] bg-right-bottom bg-no-repeat">
+              <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-white">To create a world where every organization has autonomous intelligence that grows smarter every day—transforming business complexity into competitive advantage, accelerating human discovery across all industries, and establishing the foundation for truly intelligent enterprises that think, learn, and innovate at the speed of possibility</p>
             </div>
           </motion.div>
           
@@ -56,9 +56,9 @@ const MissionSection = () => {
             <div className="flex flex-col items-center">
               <MissionIcon />
             </div>
-            <h3 className={`${anta.className} text-2xl md:text-3xl text-white text-center  mt-3`}>OUR MISSION</h3>
-            <div className="mt-3 md:mt-5 border rounded-2xl p-6 md:p-9 pb-10 md:pb-14 flex-1 flex items-center bg-[url('/images/mission-box-bg-2.png')] bg-right-bottom bg-no-repeat">
-              <p className="text-base md:text-lg text-white">QUNEU transforms enterprise complexity into intelligence by creating dynamic knowledge graphs that turn vast, disparate data into actionable insights—empowering organizations to make faster decisions, unlock hidden opportunities, and build resilient futures through secure, cost-efficient AI platforms</p>
+            <h3 className={`${anta.className} text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white text-center  mt-3`}>OUR MISSION</h3>
+            <div className="mt-3 md:mt-5 border rounded-2xl p-6 md:p-9 pb-10 md:pb-14 lg:pb-16 xl:pb-28 flex-1 flex items-center bg-[url('/images/mission-box-bg-2.png')] bg-right-bottom bg-no-repeat">
+              <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-white">QUNEU transforms enterprise complexity into intelligence by creating dynamic knowledge graphs that turn vast, disparate data into actionable insights—empowering organizations to make faster decisions, unlock hidden opportunities, and build resilient futures through secure, cost-efficient AI platforms</p>
             </div>
           </motion.div>
           
@@ -66,9 +66,9 @@ const MissionSection = () => {
             <div className="flex flex-col items-center">
               <MissionIcon />
             </div>
-            <h3 className={`${anta.className} text-2xl md:text-3xl text-white text-center  mt-3`}>OUR VALUES</h3>
-            <div className="mt-3 md:mt-5 border rounded-2xl p-6 md:p-9 pb-10 md:pb-14 flex-1 flex items-center bg-[url('/images/mission-box-bg-3.png')] bg-right-bottom bg-no-repeat">
-              <p className="text-base md:text-lg text-white">QUNEU is guided by principles that keep our work practical and responsible. We design intelligence that serves people first, built on transparency and trust. Sustainability drives our decisions, ensuring long-term impact. We believe collaboration strengthens outcomes, and we innovate with purpose—delivering solutions that create real value and scale responsibly.</p>
+            <h3 className={`${anta.className} text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white text-center  mt-3`}>OUR VALUES</h3>
+            <div className="mt-3 md:mt-5 border rounded-2xl p-6 md:p-9 pb-10 md:pb-14 lg:pb-16 xl:pb-28 flex-1 flex items-center bg-[url('/images/mission-box-bg-3.png')] bg-right-bottom bg-no-repeat">
+              <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-white">QUNEU is guided by principles that keep our work practical and responsible. We design intelligence that serves people first, built on transparency and trust. Sustainability drives our decisions, ensuring long-term impact. We believe collaboration strengthens outcomes, and we innovate with purpose—delivering solutions that create real value and scale responsibly.</p>
             </div>
           </motion.div>
         </motion.div>

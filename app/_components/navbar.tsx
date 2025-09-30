@@ -17,16 +17,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav id="navbar_header" className="bg-[#060405] shadow fixed top-4 sm:top-6 md:top-8 lg:top-10 left-0 right-0 z-50 border mx-2 sm:mx-4 md:mx-6 lg:mx-10 xl:mx-16 2xl:mx-24 text-white p-1 sm:p-2 md:p-3">
-      <div className="container mx-auto px-4 sm:px-6">
+    <nav id="navbar_header" className="bg-[#060405] shadow fixed top-4 sm:top-6 md:top-8 lg:top-10 left-0 right-0 z-50 border mx-2 sm:mx-4 md:mx-6 lg:mx-10 xl:mx-16 2xl:mx-20 text-white p-1 sm:p-2 md:p-2">
+      <div className="container mx-auto px-2 sm:px-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link href="#" className="text-xl font-bold">
-              <Image src="/images/logo.png" alt="Logo" width={120} height={40}  />
+              <Image src="/images/logo.png" alt="Logo" width={198} height={78}  />
             </Link>
           </div>
           <div className="hidden lg:block">
-            <div className="flex items-baseline justify-between space-x-2 md:space-x-4 lg:space-x-6 xl:space-x-8 text-sm sm:text-base md:text-lg lg:text-xl">
+            <div className="flex items-baseline justify-between space-x-2 md:space-x-5 lg:space-x-10 xl:space-x-20 text-sm sm:text-base md:text-lg lg:text-2xl">
               <div className="relative">
                 <button onClick={toggleSubMenu} className="flex items-center gap-1 sm:gap-2">
                   Q0 Platform {isSubMenuOpen ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
