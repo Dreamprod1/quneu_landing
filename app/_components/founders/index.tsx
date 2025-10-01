@@ -38,7 +38,7 @@ const FoundersSection = () => {
             animate={isInView ? "visible" : "hidden"}
             variants={itemVariants}
           >
-            <h2 className={`${anta.className} text-5xl md:text-7xl lg:text-9xl xl:text-[180px]`}>FOUNDERS</h2>
+            <h2 className={`${anta.className} text-3xl md:text-7xl lg:text-9xl xl:text-[180px]`}>FOUNDERS</h2>
           </motion.div>
           <motion.div
             className="flex flex-col gap-6 md:gap-8 lg:gap-10"
@@ -46,13 +46,13 @@ const FoundersSection = () => {
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
           >
-            <motion.p className="text-xl md:text-2xl lg:text-3xl text-justify" variants={itemVariants}>
+            <motion.p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-justify" variants={itemVariants}>
               Our team unites experts in neuroscience, ontology, AI, manufacturing, software development, business processes, and data security to address the critical challenge of turning vast, complex data into actionable insight that drives efficiency and innovation for your business. We pair this with deep business and operational acumen, ensuring that our solutions scale responsibly within enterprise ecosystems.
             </motion.p>
-            <motion.p className="text-xl md:text-2xl lg:text-3xl text-justify" variants={itemVariants}>
+            <motion.p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-justify" variants={itemVariants}>
               Headquartered in the United States and the Netherlands, we operate at the intersection of global innovation hubs, giving us both a transatlantic presence and strong ties to advanced technology markets.
             </motion.p>
-            <motion.p className="text-xl md:text-2xl lg:text-3xl text-justify" variants={itemVariants}>
+            <motion.p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-justify" variants={itemVariants}>
               Rather than replicate industry-specific expertise, we bring a complementary perspective that transforms organizational complexity into living, actionable intelligence — helping enterprises preserve critical know-how, accelerate decision-making, and build resilience for the future.
             </motion.p>
           </motion.div>

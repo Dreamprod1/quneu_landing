@@ -22,7 +22,7 @@ const QunueProcess = () => {
       <div className="container mx-auto">
         <motion.h2
           className={`${anta.className} text-stroke-light text-center
-          text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-9xl 2xl:text-[180px] 
+          text-3xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-9xl 2xl:text-[180px] 
           leading-5xl md:leading-7xl lg:leading-9xl xl:leading-[188px] 
           font-bold text-gray-100 drop-shadow`}
           variants={headingVariants} initial="initial" ref={Ref_title_1} animate={isInView_title_1 ? "animate" : "initial"}  >

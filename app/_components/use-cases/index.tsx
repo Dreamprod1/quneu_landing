@@ -14,7 +14,7 @@ const UseCasesSection = () => {
       <div className="relative">
         <div className="container mx-auto">
           <h2 className={`${anta.className} text-white inline-block relative z-[2]
-          text-5xl md:text-7xl lg:text-9xl 2xl:text-[180px] pr-3 bg-[#0E0E0E]`}>USE CASES</h2>
+          text-3xl md:text-7xl lg:text-9xl 2xl:text-[180px] pr-3 bg-[#0E0E0E]`}>USE CASES</h2>
         </div>
           <div className="title_line flex flex-col gap-2 justify-end mb-4 absolute right-0 w-1/2 bottom-0 lg:bottom-1 xl:bottom-2 2xl:bottom-3">
             <div className="flex-grow h-1 bg-white "></div>

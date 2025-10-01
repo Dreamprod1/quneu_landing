@@ -34,10 +34,10 @@ const CognitiveLayers = () => {
       <div className="container mx-auto">
         <motion.div ref={ref_titleDescript} initial="hidden" animate={inView_titleDescript ? "visible" : "hidden"} variants={fadeInLeft}>
           <h2 className="font-bold mb-2 md:mb-4 lg:mb-6 tracking-tight
-          text-5xl md:text-7xl lg:text-9xl 2xl:text-[180]"> COGNITIVE LAYERS </h2>
+          text-3xl md:text-7xl lg:text-9xl 2xl:text-[180]"> COGNITIVE LAYERS </h2>
           <h5 className="text-stroke-dark
           text-2xl md:text-5xl lg:text-7xl"> HOW Q0 THINKS </h5>
-          <p className="text-2xl mt-4 md:mt-6"> While your competitors wrestle with AI to update static ontology databases, Q0 operates on an entirely different principle. It doesn't just process your data—it cultivates living knowledge that grows stronger with every interaction. Q0's breakthrough architecture operates through four synchronized intelligence layers, each amplifying the others:</p>
+          <p className="text-lg md:text-xl lg:text-2xl mt-4 md:mt-6"> While your competitors wrestle with AI to update static ontology databases, Q0 operates on an entirely different principle. It doesn't just process your data—it cultivates living knowledge that grows stronger with every interaction. Q0's breakthrough architecture operates through four synchronized intelligence layers, each amplifying the others:</p>
         </motion.div>
         <div className="flex flex-col gap-8 mt-12 md:mt-16 lg:mt-24">
           <div className='relative flex gap-6 items-center'>

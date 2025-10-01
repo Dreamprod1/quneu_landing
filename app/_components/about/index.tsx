@@ -22,7 +22,7 @@ const AboutSection = () => {
         <Image src="/images/about-top-img.png" alt="shap" width={1444} height={19} />
       </motion.div>
       <div className="container mx-auto">
-        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+        <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
           Quneu is a pioneering AI company proudly delivering
           <HighlightedTextAmber delay={0} text="Q0, the most accurate, most powerful knowledge platform available today." />
           This amazing platform is being developed by a team that brings together
@@ -30,7 +30,7 @@ const AboutSection = () => {
           <HighlightedTextAmber delay={1} text="processes, and data security," />
           to automatically and dynamically dissect and categorize your company’s data.
         </div>
-        <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl 
+        <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 
         mt-6 md:mt-8 lg:mt-10">
           How does it work?
           <HighlightedTextAmber delay={1} text="Q0 automatically creates proprietary ‘knowledge graphs’ —your business’s " />

@@ -34,10 +34,10 @@ const QMATSection = () => {
     >
       <div className="container mx-auto">
         <div>
-          <div className="flex flex-col md:flex-row md-gap-5 items-center">
+          <div className="flex flex-col sm:flex-row sm:gap-5 sm:items-center">
             <motion.h2
               className={`${anta.className} font-bold mb-2 tracking-tight
-              text-5xl md:text-7xl lg:text-9xl 2xl:text-[180px]`}
+              text-3xl md:text-7xl lg:text-9xl 2xl:text-[180px]`}
               variants={titleVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
@@ -46,7 +46,7 @@ const QMATSection = () => {
             </motion.h2>
             <motion.h3
               className="mb-4 text-stroke-light 
-              text-2xl md:text-3xl lg:text-4xl xl:text-5xl "
+              text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl "
               variants={titleVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}

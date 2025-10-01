@@ -42,9 +42,9 @@ const ContactSection = () => {
           <motion.div variants={itemVariants}>
             <button type="button"
               className={`${anta.className} bg-cyan-500 text-white cursor-pointer hover:text-cyan-500 hover:bg-[#FFF] transition-colors
-            text-3xl md:text-4xl lg:text-5xl rounded-xl 
-            px-10  xl:px-16 
-            py-6 md:py-8 
+            text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl rounded-xl 
+            px-7 lg:px-12 xl:px-16 
+            py-3 lg:py-5 xl:py-8 
             mt-16 md:mt-20 lg:mt-24 `}
             >
               Schedule a demo

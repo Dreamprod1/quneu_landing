@@ -32,7 +32,7 @@ const Q0PlatformSection = () => {
           The platform's Dynamic Knowledge Graph actively
         </div>
         <div className={`${anta.className} relative font-bold
-        text-3xl sm:text-4xl md:text-5xl lg:text-6xl  
+        text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl  
         mt-6 md:mt-8 lg:mt-10`}>
           <HighlightedTextCyan delay={1} text="discovers hidden connections, predicts emerging" />
           <HighlightedTextCyan delay={1} text="patterns, and generates hypotheses your teams" />

@@ -20,7 +20,7 @@ const HeroSection = () => {
           animate={inView1 ? "visible" : "hidden"}
           variants={fadeInLeft}
         >
-          <h1 className={`${anta.className} text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl`}>
+          <h1 className={`${anta.className} text-left text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl`}>
             COGNITIVE INTELLIGENCE
             <br />
             FOR YOUR BUSINESS
