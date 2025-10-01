@@ -1,0 +1,658 @@
+.cognitivelyaer-chart-wrapper .line-1 {
+	border-bottom: 2px solid;
+	border-left: 2px solid;
+	border-bottom-left-radius: 18px;
+	width: 46%;
+	height: 37px;
+	position: absolute;
+	top: 2%;
+	left: 0;
+}
+
+.cognitivelyaer-chart-wrapper .line-2 {
+    position: absolute;
+    top: 5%;
+    left: 54%;
+    border: thin solid;
+    width: 20%;
+}
+
+.cognitivelyaer-chart-wrapper .shap-1 {
+    position: absolute;
+    top: 2%;
+    left: 74%;
+}
+
+.cognitivelyaer-chart-wrapper .shap-2 {
+    position: absolute;
+    top: 18.2%;
+    left: 62.4%;
+    scale: 0.9;
+}
+
+.cognitivelyaer-chart-wrapper .shap-3 {
+    position: absolute;
+    top: 39.6%;
+    left: 38.3%;
+    scale: .9;
+}
+
+.cognitivelyaer-chart-wrapper .shap-4 {
+    position: absolute;
+    top: 61.1%;
+    left: 23.4%;
+    scale: .9;
+}
+
+.cognitivelyaer-chart-wrapper .shap-5 {
+    position: absolute;
+    top: 74.4%;
+    left: 64.7%;
+    scale: .9;
+}
+
+.cognitivelyaer-chart-wrapper .item_1 {
+    text-align: center;
+    border: 2px dashed #000;
+    border-radius: 19px;
+    min-width: 26%;
+    padding: 15px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+    top: 25%;
+    left: 22%;
+}
+
+.cognitivelyaer-chart-wrapper .item_2 {
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 19px;
+    min-width: 26%;
+    padding: 15px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+    top: 25%;
+    left: 52%;
+}
+
+.cognitivelyaer-chart-wrapper .item_3 {
+    text-align: center;
+    border: 2px dashed #51aabe;
+    border-radius: 19px;
+    min-width: 16%;
+    padding: 11px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+    top: 35%;
+    left: 16%;
+}
+
+.cognitivelyaer-chart-wrapper .item_4 {
+    text-align: center;
+    border: 2px dashed #51aabe;
+    border-radius: 19px;
+    min-width: 17%;
+    padding: 11px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+    top: 35%;
+    left: 68%;
+}
+
+.cognitivelyaer-chart-wrapper .item_5 {
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 19px;
+    min-width: 26%;
+    padding: 15px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+    top: 47%;
+    left: 37%;
+}
+
+.cognitivelyaer-chart-wrapper .item_6 {
+    text-align: center;
+    border: 2px dashed #51aabe;
+    border-radius: 19px;
+    min-width: 16%;
+    padding: 11px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+    top: 56%;
+    left: 42%;
+}
+
+.cognitivelyaer-chart-wrapper .item_7 {
+    border: 2px solid #000;
+    border-radius: 19px;
+    min-width: 26%;
+    padding: 11px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+    top: 68%;
+    left: 20.2%;
+    text-align: center;
+}
+
+.cognitivelyaer-chart-wrapper .item_8 {
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 19px;
+    min-width: 26%;
+    padding: 11px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: absolute;
+    top: 68%;
+    left: 54.2%;
+}
+
+/****** tailwind css breack *****/
+@media (max-width: 1535px) {
+
+    /** 2xl**/
+    .cognitivelyaer-chart-wrapper .shap-2 {
+        top: 17.6%;
+        left: 62.3%;
+        scale: .7;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-3 {
+        top: 39.5%;
+        left: 37.6%;
+        scale: .75;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-4 {
+        top: 61.1%;
+        left: 22.5%;
+        scale: .74;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-5 {
+        top: 74.7%;
+        left: 64.5%;
+        scale: .74;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_1 {
+
+        min-width: 21.8vw;
+        padding: .8vw;
+        font-size: 1.6vw;
+        top: 25.4%;
+        left: 21.5%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_2 {
+
+        min-width: 21.5vw;
+        padding: .7vw;
+        font-size: 1.6vw;
+        top: 25.5%;
+        left: 52.2%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_3 {
+
+        min-width: 13.5vw;
+        padding: .5vw;
+        font-size: 1.6vw;
+        top: 35.5%;
+        left: 15.5%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_4 {
+
+        min-width: 13.5vw;
+        padding: .5vw;
+        font-size: 1.6vw;
+        top: 35.5%;
+        left: 68.4%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_5 {
+
+        min-width: 22.3vw;
+        padding: .7vw;
+        font-size: 1.6vw;
+        top: 47.4%;
+        left: 36.5%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_6 {
+
+        padding: 0.4vw;
+        font-size: 1.4rem;
+        top: 57.6%;
+        left: 41.5%;
+        min-width: 14.4vw;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_7 {
+
+        padding: 0.8vw;
+        font-size: 1.6vw;
+
+        top: 68.5%;
+        left: 20.2%;
+        min-width: 21vw;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_8 {
+
+        padding: 0.8vw;
+        font-size: 1.6vw;
+
+        top: 68.5%;
+        left: 54.2%;
+        min-width: 22vw;
+    }
+}
+
+@media (max-width: 1279px) {
+
+    /** xl**/
+    .cognitivelyaer-chart-wrapper {
+        margin-top: 124px;
+    }
+
+    .cognitivelyaer-chart-wrapper .line-1 {
+	width: 45.5%;
+	top: .5%;
+}
+
+    .cognitivelyaer-chart-wrapper .line-2 {
+        width: 20%;
+
+        top: 4.5%;
+        left: 53.9%;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-1 {
+        position: absolute;
+        top: 0%;
+        left: 72%;
+        scale: 0.55;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-2 {
+        top: 16.6%;
+        left: 61.3%;
+        scale: 0.6;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-3 {
+        top: 38.5%;
+        left: 37.2%;
+        scale: .55;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-4 {
+        top: 59.6%;
+        left: 21.8%;
+        scale: .55;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-5 {
+        top: 73.4%;
+        left: 63.5%;
+        scale: .55;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_1 {
+        min-width: 21.1vw;
+        padding: 0.7vw;
+        font-size: 1.5vw;
+        top: 25.4%;
+        left: 21.5%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_2 {
+        min-width: 20.6vw;
+        padding: .66vw;
+        font-size: 1.5vw;
+        top: 25.5%;
+        left: 52.2%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_3 {
+        min-width: 13.5vw;
+        padding: .4vw;
+        font-size: 1.5vw;
+        top: 35.5%;
+        left: 15.5%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_4 {
+        min-width: 13.4vw;
+        padding: .45vw;
+        font-size: 1.4vw;
+        top: 35.5%;
+        left: 67.7%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_5 {
+        min-width: 21.2vw;
+        padding: .6vw;
+        font-size: 1.6vw;
+        top: 47.3%;
+        left: 37.1%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_6 {
+        top: 58.6%;
+        left: 41.5%;
+        min-width: 13.5vw;
+        padding: .4vw;
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    /** lg**/
+    .cognitivelyaer-chart-wrapper .shap-2 {
+        top: 15.5%;
+        left: 60.2%;
+        scale: .45;
+    }
+
+    .cognitivelyaer-chart-wrapper .line-2 {
+        width: 20%;
+        top: 5.5%;
+        left: 53.9%;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-3 {
+        top: 37.2%;
+        left: 35.5%;
+        scale: .44;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-4 {
+        top: 58.8%;
+        left: 20.4%;
+        scale: .44;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-5 {
+        top: 72.5%;
+        left: 62.5%;
+        scale: .44;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_1 {
+        min-width: 19.6vw;
+        padding: .7vw;
+        font-size: 1.44vw;
+        top: 25.4%;
+        left: 21.5%;
+        border-radius: 0.99vw;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_2 {
+        min-width: 19.6vw;
+        padding: .66vw;
+        font-size: 1.4vw;
+        top: 25.5%;
+        left: 52.2%;
+        border-radius: 0.99vw;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_3 {
+        min-width: 13.5vw;
+        padding: .4vw;
+        font-size: 1.4vw;
+        top: 35.5%;
+        left: 14.5%;
+        border-radius: 0.99vw;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_4 {
+        border-radius: 0.99vw;
+    }
+
+
+    .cognitivelyaer-chart-wrapper .item_5 {
+        min-width: 19.2vw;
+        padding: .6vw;
+        font-size: 1.6vw;
+        top: 47.3%;
+        left: 37.1%;
+        border-radius: 0.99vw;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_6 {
+        border-radius: 0.99vw;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_7 {
+        border-radius: 0.99vw;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_8 {
+        border-radius: 0.99vw;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /** md**/
+    .cognitivelyaer-chart-wrapper {
+        margin-top: 24px;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-1,
+    .cognitivelyaer-chart-wrapper .line-2,
+    .cognitivelyaer-chart-wrapper .line-1 {
+        display: none;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-2 {
+        top: 13.5%;
+        left: 58.5%;
+        scale: .35;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-3 {
+        top: 34.6%;
+        left: 34.8%;
+        scale: .38;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-4 {
+        top: 55.8%;
+        left: 20.3%;
+        scale: .35;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-5 {
+        top: 69.2%;
+        left: 60.5%;
+        scale: .35;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_1 {
+        min-width: 20.6vw;
+        padding: .9vw;
+        font-size: 1.5vw;
+        top: 24.4%;
+        left: 22.5%;
+        border-width: 1px;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_2 {
+        border-width: 1px;
+        min-width: 21.4vw;
+        padding: .77vw;
+        font-size: 1.4vw;
+        top: 24.5%;
+        left: 52.2%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_3 {
+        min-width: 13.5vw;
+        padding: .5vw;
+        font-size: 1.5vw;
+        top: 34.5%;
+        left: 16.5%;
+        border-width: 1px;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_4 {
+
+        border-width: 1px;
+        padding: .5vw;
+        font-size: 1.5vw;
+        top: 34.5%;
+        left: 67.7%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_5 {
+
+        min-width: 21.2vw;
+        padding: .6vw;
+        font-size: 1.5vw;
+        top: 46.3%;
+        left: 37.1%;
+        border-width: 1px;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_6 {
+        min-width: 13.5vw;
+        padding: .4vw;
+        font-size: 1.5vw;
+        top: 55.6%;
+        left: 41.5%;
+
+        border-width: 1px;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_7 {
+        min-width: 21.5vw;
+        padding: .8vw;
+        font-size: 1.6vw;
+        top: 66.5%;
+        left: 20.2%;
+        border-width: 1px;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_8 {
+        min-width: 21.5vw;
+        padding: .8vw;
+        font-size: 1.6vw;
+        top: 66.5%;
+        left: 54.2%;
+        border-width: 1px;
+    }
+
+
+}
+
+@media (max-width: 639px) {
+    /** sm**/
+}
+
+@media (max-width: 428px) {
+    .cognitivelyaer-chart-wrapper .shap-2 {
+        top: 10.5%;
+        left: 56.5%;
+        scale: .25;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-3 {
+        top: 32.6%;
+        left: 31.8%;
+        scale: .28;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-4 {
+        top: 54.8%;
+        left: 16.3%;
+        scale: .25;
+    }
+
+    .cognitivelyaer-chart-wrapper .shap-5 {
+        top: 68.5%;
+        left: 59.5%;
+        scale: .25;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_1 {
+        min-width: 26.6vw;
+        padding: .99vw;
+        font-size: 1.8vw;
+        top: 25.4%;
+        left: 21.5%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_2 {
+        min-width: 26.4vw;
+        padding: .99vw;
+        font-size: 1.9vw;
+        top: 25.5%;
+        left: 52.2%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_3 {
+        min-width: 16.5vw;
+        padding: .99vw;
+        font-size: 1.9vw;
+        top: 35.5%;
+        left: 15.5%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_4 {
+        padding: .4vw;
+        font-size: 1.9vw;
+        top: 36.5%;
+        left: 68.7%;
+        min-width: 17.4vw;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_5 {
+
+        min-width: 27.2vw;
+        padding: .99vw;
+        font-size: 1.9vw;
+        top: 47.3%;
+        left: 37.1%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_7 {
+
+        min-width: 27.5vw;
+        padding: .9vw;
+        font-size: 1.9vw;
+        top: 69.5%;
+        left: 19.2%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_6 {
+
+        min-width: 16.5vw;
+        padding: .9vw;
+        font-size: 1.9vw;
+        top: 57.6%;
+        left: 42.5%;
+    }
+
+    .cognitivelyaer-chart-wrapper .item_8 {
+        border-width: 1px;
+        min-width: 26.5vw;
+        padding: .9vw;
+        font-size: 1.9vw;
+        top: 69.5%;
+        left: 55.2%;
+    }
+
+}

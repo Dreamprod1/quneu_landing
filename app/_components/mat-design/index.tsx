@@ -2,9 +2,7 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
 import { anta } from "@/lib/fonts";
-
 const MatDesignSection = () => {
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -14,28 +12,27 @@ const MatDesignSection = () => {
       },
     },
   };
-
   const itemVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
-
   const ref = React.useRef(null);
   const inView = useInView(ref, { once: true, amount: 0.5 });
-
   return (
     <div
       id="mat_design_section"
-      className="relative bg-[url(/images/mat-design.jpg)] bg-center bg-cover bg-no-repeat bg-fixed  text-justify flex flex-col items-center justify-center px-4 sm:px-8  py-16 md:py-20 overflow-hidden"
+      className="relative bg-[url(/images/mat-design.jpg)] bg-center bg-cover bg-no-repeat bg-fixed px-8  text-justify flex flex-col items-center justify-center px-4 sm:px-8  py-16 md:py-20 overflow-hidden"
     >
-      <div className="container mx-auto max-w-screen-xl gap-6 md:gap-8 lg:gap-10" ref={ref}>
+      <div className="container mx-auto" ref={ref}>
         <motion.div
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={containerVariants}
         >
           <motion.h3
-            className={`text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-6 md:mb-8 lg:mb-10 text-center md:text-left ${anta.className}`}
+            className={`text-left ${anta.className} text-white 
+              text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 
+              mb-6 md:mb-8 lg:mb-10 `}
             variants={itemVariants}
           >
             Q0’s Intelligent Material Design

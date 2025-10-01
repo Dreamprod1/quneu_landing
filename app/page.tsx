@@ -14,6 +14,7 @@ import UseCasesSection from "./_components/use-cases";
 import MissionSection from "./_components/mission";
 import FoundersSection from "./_components/founders";
 import ContactSection from "./_components/contact";
+import BottomRightFix from "./_components/bottomRightFix";
 //___
 export default function Home() {
   return (
@@ -23,17 +24,16 @@ export default function Home() {
       <AboutSection />
       <Q0PlatformSection />
       <GraphInfoSection />
-
       <QunueProcess />
       <QLMSection />
       <CognitiveLayers />
-
       <QMATSection />
       <MatDesignSection />
       <UseCasesSection />
       <MissionSection />
       <FoundersSection />
       <ContactSection />
+      <BottomRightFix/>
     </div>
   );
 }
