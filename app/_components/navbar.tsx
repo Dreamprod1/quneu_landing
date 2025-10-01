@@ -28,16 +28,15 @@ const Navbar = () => {
             <div className="flex items-baseline justify-between 
             space-x-2 md:space-x-5 lg:space-x-10 xl:space-x-20 
             text-sm sm:text-base md:text-lg lg:text-2xl">
-              <div className="relative">
-                <button onClick={toggleSubMenu} className="flex items-center gap-1 sm:gap-2">
-                  Q0 Platform {isSubMenuOpen ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
+              <div className="relative group">
+                <button className="flex items-center gap-1 sm:gap-2">
+                  Q0 Platform <ChevronDown size={14} />
                 </button>
-                {isSubMenuOpen && (
-                  <div className="absolute top-full left-0 mt-2 sm:mt-4 w-36 sm:w-48 bg-[#060405] border border-t-0 shadow-lg overflow-hidden">
-                    <Link href="#graph_info_section" className="block px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm text-gray-300 hover:bg-gray-700 hover:text-white" onClick={() => { setIsSubMenuOpen(false); }}>QGRAPH</Link>
-                    <Link href="#qmat_section" className="block px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm text-gray-300 hover:bg-gray-700 hover:text-white" onClick={() => { setIsSubMenuOpen(false); }}>QMAT</Link>
-                  </div>
-                )}
+                <div className="absolute top-full left-0 mt-2 sm:mt-4 w-36 sm:w-48 bg-[#060405] border border-t-0 shadow-lg overflow-hidden
+                  invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <Link href="#graph_info_section" className="block px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm text-gray-300 hover:bg-gray-700 hover:text-white">QGRAPH</Link>
+                  <Link href="#qmat_section" className="block px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm text-gray-300 hover:bg-gray-700 hover:text-white">QMAT</Link>
+                </div>
               </div>
               <Link href="#cognitive_layers">Cognitive Layers</Link>
               <Link href="#use_cases_section">Use Cases</Link>

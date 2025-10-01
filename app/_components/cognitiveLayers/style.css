@@ -1,12 +1,12 @@
 .cognitivelyaer-chart-wrapper .line-1 {
-    border-left: 2px solid;
-    width: 44%;
-    position: absolute;
-    top: 2%;
-    left: 25px;
-    height: 37px;
-    border-bottom: 2px solid;
-    border-bottom-left-radius: 18px;
+	border-bottom: 2px solid;
+	border-left: 2px solid;
+	border-bottom-left-radius: 18px;
+	width: 46%;
+	height: 37px;
+	position: absolute;
+	top: 2%;
+	left: 0;
 }
 
 .cognitivelyaer-chart-wrapper .line-2 {
@@ -266,10 +266,9 @@
     }
 
     .cognitivelyaer-chart-wrapper .line-1 {
-        width: 43.5%;
-        top: 0.5%;
-        left: 24px;
-    }
+	width: 45.5%;
+	top: .5%;
+}
 
     .cognitivelyaer-chart-wrapper .line-2 {
         width: 20%;

@@ -11,7 +11,8 @@ const HeroSection = () => {
   const ref1 = React.useRef(null);
   const inView1 = useInView(ref1, { once: true, amount: 0.5 });
   return (
-    <div id="hero_section" className="bg-[url('/images/hero.png')] bg-cover bg-center bg-no-repeat h-screen flex flex-col items-center justify-end px-8 py-10  text-white overflow-hidden" >
+    <div id="hero_section" className="h-[105dvh] flex flex-col items-center justify-end px-8 pt-10 pb-8 text-white overflow-hidden
+    bg-[url('/images/hero.png')] bg-cover bg-top bg-no-repeat " >
       <div className="container mx-auto text-center">
         <motion.div
           ref={ref1}
@@ -25,7 +26,7 @@ const HeroSection = () => {
             FOR YOUR BUSINESS
           </h1>
         </motion.div>
-        <div className="flex items-center justify-center flex-col mt-8 sm:mt-12 md:mt-16 lg:mt-20">
+        <div className="flex items-center justify-center flex-col mt-8 sm:mt-12 md:mt-16 lg:mt-24">
           <span className="text-xs sm:text-sm font-bold">
             Scroll to explore
           </span>
