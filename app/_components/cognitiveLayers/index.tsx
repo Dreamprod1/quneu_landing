@@ -78,7 +78,7 @@ const CognitiveLayers = () => {
                 <line x1="53.2902" y1="33.0256" x2="64.1388" y2="25.0661" stroke="black" />
               </svg>
             </div>
-            <motion.div ref={ref_box_2} initial="hidden" animate={inView_box_2 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-2.png')] bg-no-repeat bg-left-bottom-top
+            <motion.div ref={ref_box_2} initial="hidden" animate={inView_box_2 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-2.png')] bg-no-repeat bg-left-bottom
               px-10 pt-8 pb-24">
               <h3 className={`font-semibold mb-2 ${anta.className}
               text-2xl md:text-4xl lg:text-6xl `}>LAYER 2: THE INFINITY BRAIN</h3>

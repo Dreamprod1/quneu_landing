@@ -1,5 +1,5 @@
 "use client";
-import { Carousel, CarouselContent, CarouselDots, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselDots, CarouselItem } from "@/components/ui/carousel";
 import { anta } from "@/lib/fonts";
 const useCases = [
   { id: 1, caseNumber: "CASE 01", description: "Short description", bgImage: "/images/case-box-bg-1.png" },
@@ -10,28 +10,29 @@ const useCases = [
 ];
 const UseCasesSection = () => {
   return (
-    <div id="use_cases_section" className="relative bg-[#0E0E0E] h-full flex flex-col px-8 pt-16 md:pt-24 lg:pt-32 pb-10 overflow-hidden">
-      <div className="flex justify-end items-end">
-        <h2 className={`${anta.className} text-white 
-        text-5xl md:text-7xl lg:text-9xl 2xl:text-[180px]`}>USE CASES</h2>
-        <div className="w-full md:w-1/3 flex flex-col gap-2 justify-end mb-4">
-          <div className="flex-grow h-1 bg-white "></div>
-          <div className="flex-grow h-1 bg-white "></div>
+    <div id="use_cases_section" className="use_cases_section relative bg-[#0E0E0E] h-full flex flex-col px-8 pt-16 md:pt-24 lg:pt-32 pb-10 overflow-hidden">
+      <div className="relative">
+        <div className="container mx-auto">
+          <h2 className={`${anta.className} text-white inline-block relative z-[2]
+          text-5xl md:text-7xl lg:text-9xl 2xl:text-[180px] pr-3 bg-[#0E0E0E]`}>USE CASES</h2>
         </div>
+          <div className="title_line flex flex-col gap-2 justify-end mb-4 absolute right-0 w-1/2 bottom-0 lg:bottom-1 xl:bottom-2 2xl:bottom-3">
+            <div className="flex-grow h-1 bg-white "></div>
+            <div className="flex-grow h-1 bg-white "></div>
+          </div>
       </div>
-      <div className="container mx-auto 
-      my-10 md:my-14 lg:my-20">
+      <div className="my-10 md:my-14 lg:my-20">
         <Carousel>
-          <CarouselContent className="px-4 md:px-8 lg:px-12">
+          <CarouselContent className="px-4 md:px-8 lg:px-12 justify-center">
             {useCases.map((item) => (
               <CarouselItem
                 key={item.id}
                 className="p-2 md:p-4
-                basis-full md:basis-1/2 lg:basis-1/3 
-                min-h-[300px] md:min-h-[400px] lg:min-h-[450px] "
+                max-w-[460px] md:max-w-[500px] lg:max-w-[530px]
+                min-h-[300px] md:min-h-[400px] lg:min-h-[450px]"
               >
                 <div
-                  className="border rounded-2xl flex h-full text-white flex-col items-center justify-center 
+                  className="border rounded-2xl flex h-full text-white flex-col items-center justify-center bg-no-repeat bg-left-top bg-cover
                   p-4 md:p-6 lg:p-8"
                   style={{ backgroundImage: `url(${item.bgImage})` }}
                 >
@@ -41,8 +42,6 @@ const UseCasesSection = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" />
           <CarouselDots className="mt-8 md:mt-12" />
         </Carousel>
       </div>

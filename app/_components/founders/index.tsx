@@ -30,7 +30,7 @@ const FoundersSection = () => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
   return (
-    <div id="Founders_section" className="relative bg-[#0E0E0E] px-8 sm:px-16 md:px-24 lg:px-40 py-16 md:py-24 text-white overflow-hidden">
+    <div id="Founders_section" className="relative bg-[#0E0E0E] px-8 py-16 md:py-24 text-white overflow-hidden">
       <div className="container mx-auto" >
         <div ref={ref} className="flex flex-col gap-8 md:gap-12 lg:gap-16">
           <motion.div

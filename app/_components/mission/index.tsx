@@ -32,8 +32,8 @@ const MissionSection = () => {
       <div className="container mx-auto" ref={ref}>
         <motion.div
           className="flex flex-col items-stretch
-            lg:flex-row
-            gap-8 md:gap-12 lg:gap-20"
+            xl:flex-row
+            gap-5 md:gap-8 lg:gap-12 xl:gap-20"
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={containerVariants}
@@ -44,7 +44,7 @@ const MissionSection = () => {
             </div>
             <h3 className={`${anta.className} text-white text-center mt-3
             text-2xl md:text-3xl lg:text-4xl xl:text-5xl `}>OUR VISION</h3>
-            <div className="border rounded-2xl flex-1 flex items-center bg-[url('/images/mission-box-bg-1.png')] bg-right-bottom bg-no-repeat
+            <div className="border rounded-2xl flex-1 flex items-center bg-[url('/images/mission-box-bg-1.png')] bg-right-bottom bg-cover bg-no-repeat
             mt-3 md:mt-5  
             p-6 md:p-9 
             pb-10 md:pb-14 lg:pb-16 xl:pb-28 
@@ -59,7 +59,7 @@ const MissionSection = () => {
             </div>
             <h3 className={`${anta.className} text-white text-center  mt-3
             text-2xl md:text-3xl lg:text-4xl xl:text-5xl `}>OUR MISSION</h3>
-            <div className="border rounded-2xl flex-1 flex items-center bg-[url('/images/mission-box-bg-2.png')] bg-right-bottom bg-no-repeat
+            <div className="border rounded-2xl flex-1 flex items-center bg-[url('/images/mission-box-bg-2.png')] bg-right-bottom bg-cover bg-no-repeat
             mt-3 md:mt-5  
             p-6 md:p-9 
             pb-10 md:pb-14 lg:pb-16 xl:pb-28 ">
@@ -73,7 +73,7 @@ const MissionSection = () => {
             </div>
             <h3 className={`${anta.className} text-white text-center  mt-3
             text-2xl md:text-3xl lg:text-4xl xl:text-5xl `}>OUR VALUES</h3>
-            <div className="border rounded-2xl flex-1 flex items-center bg-[url('/images/mission-box-bg-3.png')] bg-right-bottom bg-no-repeat
+            <div className="border rounded-2xl flex-1 flex items-center bg-[url('/images/mission-box-bg-3.png')] bg-right-bottom bg-cover bg-no-repeat
             mt-3 md:mt-5  
             p-6 md:p-9 
             pb-10 md:pb-14 lg:pb-16 xl:pb-28  ">
