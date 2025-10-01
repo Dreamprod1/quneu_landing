@@ -23,7 +23,7 @@ const Q0PlatformSection = () => {
         <h3 className={`${anta.className} text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[200px]`}>
           Q0 Platform
         </h3>
-        <div className="max-w-7xl  mt-4 
+        <div className="max-w-7xl mt-4 md:mt-6 lg:mt-8 
         text-base sm:text-lg md:text-xl lg:text-2xl ">
           <HighlightedTextCyan delay={0} text="Q0’s enterprise intelligence platform delivers what knowledge graphs were meant to achieve:" />
           autonomous, real-time understanding of your entire organization. Unlike

@@ -33,16 +33,16 @@ const CognitiveLayers = () => {
       pb-24 md:pb-36">
       <div className="container mx-auto">
         <motion.div ref={ref_titleDescript} initial="hidden" animate={inView_titleDescript ? "visible" : "hidden"} variants={fadeInLeft}>
-          <h2 className="font-bold mb-6 tracking-tight
+          <h2 className="font-bold mb-2 md:mb-4 lg:mb-6 tracking-tight
           text-5xl md:text-7xl lg:text-9xl 2xl:text-[180]"> COGNITIVE LAYERS </h2>
           <h5 className="text-stroke-dark
           text-2xl md:text-5xl lg:text-7xl"> HOW Q0 THINKS </h5>
-          <p className="text-2xl mt-6"> While your competitors wrestle with AI to update static ontology databases, Q0 operates on an entirely different principle. It doesn't just process your data—it cultivates living knowledge that grows stronger with every interaction. Q0's breakthrough architecture operates through four synchronized intelligence layers, each amplifying the others:</p>
+          <p className="text-2xl mt-4 md:mt-6"> While your competitors wrestle with AI to update static ontology databases, Q0 operates on an entirely different principle. It doesn't just process your data—it cultivates living knowledge that grows stronger with every interaction. Q0's breakthrough architecture operates through four synchronized intelligence layers, each amplifying the others:</p>
         </motion.div>
-        <div className="flex flex-col gap-8 mt-24">
+        <div className="flex flex-col gap-8 mt-12 md:mt-16 lg:mt-24">
           <div className='relative flex gap-6 items-center'>
-            <div className='relative min-w-[160px] hidden md:block'>
-              <div className='absolute border-t-2 border-l-2 top-[48%] left-0 w-[52%] h-[20px] rounded-tl-2xl ' />
+            <div className='relative md:min-w-[100px] lg:min-w-[130px] xl:min-w-[160px] hidden md:block'>
+              <div className='absolute border-t-2 border-l-2 top-[48%] left-0 md:w-[26%] lg:w-[43%] xl:w-[52%] h-[20px] rounded-tl-2xl ' />
               <svg className='ml-auto' width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="39" cy="39" r="37.75" stroke="black" strokeWidth="2.5" />
                 <line x1="76.1113" y1="36.3828" x2="1.19586" y2="37.5124" stroke="black" />
@@ -52,11 +52,11 @@ const CognitiveLayers = () => {
                 <line x1="32.4611" y1="52.7337" x2="47.6359" y2="36.6763" stroke="black" />
               </svg>
             </div>
-            <motion.div ref={ref_box_1} initial="hidden" animate={inView_box_1 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-1.png')] bg-no-repeat bg-left-bottom
-              px-10 pt-8 pb-24">
-              <h3 className={`font-semibold mb-2 ${anta.className}
+            <motion.div ref={ref_box_1} initial="hidden" animate={inView_box_1 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-3 lg:gap-5 xl:gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-1.png')] bg-no-repeat bg-left-bottom
+              px-4 lg:px-8 xl:px-10 pt-8 pb-16 lg:pb-20 xl:pb-24">
+              <h3 className={`font-semibold mb-1 md:mb-2 ${anta.className}
               text-2xl md:text-4xl lg:text-6xl`}>LAYER 1: THE EXPLORER BRAIN</h3>
-              <p className={`mb-4 ${anta.className}
+              <p className={`mb-2 md:mb-4 ${anta.className}
               text-2xl md:text-3xl lg:text-5xl `}>(Autonomous Discovery)</p>
               <div className='flex flex-col gap-6
               text-1xl md:text-2xl lg:text-3xl'>
@@ -67,8 +67,8 @@ const CognitiveLayers = () => {
             <div className='absolute lef-0 w-[2px] top-[53%] h-[50%] bg-black hidden md:block' />
           </div>
           <div className='relative flex gap-6 items-center'>
-            <div className='relative min-w-[160px] hidden md:block'>
-              <div className='absolute border top-[48%] lef-0 w-[52%] ' />
+            <div className='relative md:min-w-[100px] lg:min-w-[130px] xl:min-w-[160px] hidden md:block'>
+              <div className='absolute border top-[48%] lef-0 md:w-[26%] lg:w-[43%] xl:w-[52%] ' />
               <svg className='ml-auto' width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="39" cy="39" r="37.75" stroke="black" strokeWidth="2.5" />
                 <line x1="59.8589" y1="6.96197" x2="71.8047" y2="56.1031" stroke="black" />
@@ -78,11 +78,11 @@ const CognitiveLayers = () => {
                 <line x1="53.2902" y1="33.0256" x2="64.1388" y2="25.0661" stroke="black" />
               </svg>
             </div>
-            <motion.div ref={ref_box_2} initial="hidden" animate={inView_box_2 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-2.png')] bg-no-repeat bg-left-bottom
-              px-10 pt-8 pb-24">
-              <h3 className={`font-semibold mb-2 ${anta.className}
+            <motion.div ref={ref_box_2} initial="hidden" animate={inView_box_2 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-3 lg:gap-5 xl:gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-2.png')] bg-no-repeat bg-left-bottom
+              px-4 lg:px-8 xl:px-10 pt-8 pb-16 lg:pb-20 xl:pb-24">
+              <h3 className={`font-semibold mb-1 md:mb-2 ${anta.className}
               text-2xl md:text-4xl lg:text-6xl `}>LAYER 2: THE INFINITY BRAIN</h3>
-              <p className={`mb-4 ${anta.className}
+              <p className={`mb-2 md:mb-4 ${anta.className}
               text-2xl md:text-3xl lg:text-5xl`}>(Temporal Intelligence)</p>
               <div className='flex flex-col gap-6
               text-1xl md:text-2xl lg:text-3xl'>
@@ -93,8 +93,8 @@ const CognitiveLayers = () => {
             <div className='absolute lef-0 w-[2px] -top-[10%] h-[110%] bg-black hidden md:block' />
           </div>
           <div ref={ref_box_3} className='relative flex gap-6 items-center'>
-            <div className='relative min-w-[160px] hidden md:block'>
-              <div className='absolute border top-[48%] lef-0 w-[52%] ' />
+            <div className='relative md:min-w-[100px] lg:min-w-[130px] xl:min-w-[160px] hidden md:block'>
+              <div className='absolute border top-[48%] lef-0 md:w-[26%] lg:w-[43%] xl:w-[52%] ' />
               <svg className='ml-auto' width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="39" cy="39" r="37.75" stroke="black" strokeWidth="2.5" />
                 <line x1="6.51691" y1="18.7348" x2="76.5218" y2="41.6562" stroke="black" />
@@ -103,11 +103,11 @@ const CognitiveLayers = () => {
                 <line x1="15.4859" y1="36.6964" x2="56.2188" y2="48.7765" stroke="black" />
               </svg>
             </div>
-            <motion.div initial="hidden" animate={inView_box_3 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-3.png')] bg-no-repeat bg-left-bottom
-              px-10 pt-8 pb-24">
-              <h3 className={`font-semibold mb-2 ${anta.className}
+            <motion.div initial="hidden" animate={inView_box_3 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-3 lg:gap-5 xl:gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-3.png')] bg-no-repeat bg-left-bottom
+              px-4 lg:px-8 xl:px-10 pt-8 pb-16 lg:pb-20 xl:pb-24">
+              <h3 className={`font-semibold mb-1 md:mb-2 ${anta.className}
               text-2xl md:text-4xl lg:text-6xl`}>LAYER 3: THE SCHOLAR BRAIN</h3>
-              <p className={`mb-4 ${anta.className}
+              <p className={`mb-2 md:mb-4 ${anta.className}
               text-2xl md:text-3xl lg:text-5xl`}>(Validated Learning)</p>
               <div className='flex flex-col gap-6
               text-1xl md:text-2xl lg:text-3xl'>
@@ -118,8 +118,8 @@ const CognitiveLayers = () => {
             <div className='absolute lef-0 w-[2px] -top-[10%] h-[110%] bg-black hidden md:block' />
           </div>
           <div ref={ref_box_4} className='relative flex gap-6 items-center'>
-            <div className='relative min-w-[160px] hidden md:block'>
-              <div className='absolute border top-[48%] lef-0 w-[52%] ' />
+            <div className='relative md:min-w-[100px] lg:min-w-[130px] xl:min-w-[160px] hidden md:block'>
+              <div className='absolute border top-[48%] lef-0 md:w-[26%] lg:w-[43%] xl:w-[52%] ' />
               <svg className='ml-auto' width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="39" cy="39" r="37.75" stroke="black" strokeWidth="2.5" />
                 <line x1="19.0931" y1="6.72891" x2="57.9319" y2="72.7553" stroke="black" />
@@ -127,9 +127,9 @@ const CognitiveLayers = () => {
                 <line x1="31.7662" y1="28.5028" x2="66.8179" y2="33.8734" stroke="black" />
               </svg>
             </div>
-            <motion.div initial="hidden" animate={inView_box_4 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-4.png')] bg-no-repeat bg-left-bottom
-              px-10 pt-8 pb-24">
-              <h3 className={`font-semibold mb-2 ${anta.className}
+            <motion.div initial="hidden" animate={inView_box_4 ? "visible" : "hidden"} variants={fadeInRight} className="flex flex-col gap-3 lg:gap-5 xl:gap-7 border-2 rounded-3xl shadow-md bg-[url('/images/cognitive-layer-4.png')] bg-no-repeat bg-left-bottom
+              px-4 lg:px-8 xl:px-10 pt-8 pb-16 lg:pb-20 xl:pb-24">
+              <h3 className={`font-semibold mb-1 md:mb-2 ${anta.className}
               text-2xl md:text-4xl lg:text-6xl`}>LAYER 4: THE DETECTIVE BRAIN</h3>
               <p className={`mb-4 ${anta.className}
               text-2xl md:text-3xl lg:text-5xl`}>(Deep Connection Analysis)</p>
@@ -144,7 +144,7 @@ const CognitiveLayers = () => {
         </div>
       </div>
       <div className="container mx-auto">
-        <div className="relative mt-16 cognitivelyaer-chart-wrapper">
+        <div className="relative mt-8 md:mt-12 lg:mt-16 cognitivelyaer-chart-wrapper">
           <div className="line-1"></div>
           <div className="line-2"></div>
           <div className="shap-1">

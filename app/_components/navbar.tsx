@@ -60,8 +60,8 @@ const Navbar = () => {
             </button>
             {isSubMenuOpen && (
               <div className="pl-6 space-y-1">
-                <Link href="#QGRAPH" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:bg-gray-600 hover:text-white" onClick={() => { setIsMenuOpen(false); setIsSubMenuOpen(false); }}>QGRAPH</Link>
-                <Link href="#QMAT" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:bg-gray-600 hover:text-white" onClick={() => { setIsMenuOpen(false); setIsSubMenuOpen(false); }}>QMAT</Link>
+                <Link href="#graph_info_section" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:bg-gray-600 hover:text-white" onClick={() => { setIsMenuOpen(false); setIsSubMenuOpen(false); }}>QGRAPH</Link>
+                <Link href="#qmat_section" className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:bg-gray-600 hover:text-white" onClick={() => { setIsMenuOpen(false); setIsSubMenuOpen(false); }}>QMAT</Link>
               </div>
             )}
             <Link href="#cognitive_layers" className="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" onClick={toggleMenu}>Cognitive Layers</Link>

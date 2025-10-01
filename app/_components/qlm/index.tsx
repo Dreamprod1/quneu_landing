@@ -25,7 +25,7 @@ const QLMSection = () => {
   return (
     <div
       ref={containerRef} id="qlm_section"
-      className="relative bg-[#0E0E0E] h-full px-8 pt-5 pb-24 md:pb-36 text-white overflow-hidden"
+      className="relative bg-[#0E0E0E] h-full px-4 px-8 pb-24 md:pb-36 text-white overflow-hidden"
     >
       <div className="relative container mx-auto lg:px-10 flex items-center">
         <motion.h2
@@ -58,7 +58,7 @@ const QLMSection = () => {
         initial="initial"
         animate={isInView ? "animate" : "initial"}
       ></motion.div>
-      <div className="relative container mx-auto lg:px-10 mt-12">
+      <div className="relative container mx-auto lg:px-10 mt-8 md:mt-12">
         <motion.div
           className="flex flex-col border rounded-2xl p-6 md:p-9 gap-4 md:gap-6"
           variants={boxVariants}

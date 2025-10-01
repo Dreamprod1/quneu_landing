@@ -17,7 +17,7 @@ const QunueProcess = () => {
   const isInView_box_3 = useInView(Ref_box_3, { once: true, amount: 0.2 });
   return (
     <div id="QunueProcess_section"
-      className="relative px-8 bg-[url('/images/QuneuProcess-bg-1.png')] bg-no-repeat bg-top-left bg-cover py-12 md:py-16 text-white overflow-hidden"
+      className="relative px-8 bg-[url('/images/QuneuProcess-bg-1.png')] bg-no-repeat bg-top-left bg-cover pt-12 md:pt-16 pb-8 md:pb-12 lg:pb-16 text-white overflow-hidden"
     >
       <div className="container mx-auto">
         <motion.h2

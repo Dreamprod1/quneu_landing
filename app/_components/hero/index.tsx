@@ -11,7 +11,7 @@ const HeroSection = () => {
   const ref1 = React.useRef(null);
   const inView1 = useInView(ref1, { once: true, amount: 0.5 });
   return (
-    <div id="hero_section" className="h-[105dvh] flex flex-col items-center justify-end px-8 pt-10 pb-8 text-white overflow-hidden
+    <div id="hero_section" className="h-[105dvh] flex flex-col items-center justify-end px-8 pt-10 pb-8 md:pb-12 text-white overflow-hidden
     bg-[url('/images/hero.png')] bg-cover bg-top bg-no-repeat " >
       <div className="container mx-auto text-center">
         <motion.div
