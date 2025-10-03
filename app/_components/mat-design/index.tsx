@@ -21,24 +21,24 @@ const MatDesignSection = () => {
   return (
     <div
       id="mat_design_section"
-      className="relative bg-[url(/images/mat-design.jpg)] bg-center bg-cover bg-no-repeat bg-fixed px-8  text-justify flex flex-col items-center justify-center px-4 sm:px-8  py-16 md:py-20 overflow-hidden"
+      className="relative bg-[url(/images/mat-design.jpg)] bg-center bg-cover bg-no-repeat bg-fixed  text-justify flex flex-col items-center justify-center py-16 md:py-[4rem] overflow-hidden"
     >
-      <div className="container mx-auto" ref={ref}>
+      <div className="w-full max-w-[82rem] px-6 mx-auto" ref={ref}>
         <motion.div
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={containerVariants}
         >
           <motion.h3
-            className={`text-left ${anta.className} text-white 
-              text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 
+            className={`text-left ${anta.className} text-white tracking-widest
+              text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[4.2rem] 
               mb-6 md:mb-8 lg:mb-10 `}
             variants={itemVariants}
           >
             Q0’s Intelligent Material Design
           </motion.h3>
           <motion.p
-            className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl  text-center md:text-left"
+            className="text-white text-base sm:text-lg md:text-xl lg:text-2xl text-center md:text-left"
             variants={itemVariants}
           >
             We have developed a groundbreaking AI platform that designs novel, high-performance materials from the ground up. Imagine an AI artist that can create a perfect, intricate

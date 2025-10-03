@@ -17,19 +17,19 @@ const QunueProcess = () => {
   const isInView_box_3 = useInView(Ref_box_3, { once: true, amount: 0.2 });
   return (
     <div id="QunueProcess_section"
-      className="relative px-8 bg-[url('/images/QuneuProcess-bg-1.png')] bg-no-repeat bg-top-left bg-cover pt-12 md:pt-16 pb-8 md:pb-12 lg:pb-16 text-white overflow-hidden"
+      className="relative bg-[url('/images/QuneuProcess-bg-1.png')] bg-no-repeat bg-top-left bg-cover pt-10 md:pt-12 pb-2 text-white overflow-hidden"
     >
-      <div className="container mx-auto">
+      <div className="w-full max-w-[82rem] px-6 mx-auto">
         <motion.h2
-          className={`${anta.className} text-stroke-light text-center
-          text-3xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-9xl 2xl:text-[180px] 
+          className={`${anta.className} text-stroke-light2 text-center tracking-widest
+          text-3xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-9xl 
           leading-5xl md:leading-7xl lg:leading-9xl xl:leading-[188px] 
           font-bold text-gray-100 drop-shadow`}
           variants={headingVariants} initial="initial" ref={Ref_title_1} animate={isInView_title_1 ? "animate" : "initial"}  >
           QUNEU PROCESS
         </motion.h2>
         <div className="qunueprocess-flow-wrapper relative">
-          <Image src="/images/QuneuProcess-img-1.png" alt="quen process" width={1520} height={2630} />
+          <Image src="/images/QuneuProcess-img-1.png" alt="quen process" width={1114} height={1974} className="mx-auto" />
           <div className="line_1">
             <svg width="337" height="379" viewBox="0 0 337 379" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="315" cy="22" r="21" fill="#0D1B1D" stroke="white" strokeWidth="2" />

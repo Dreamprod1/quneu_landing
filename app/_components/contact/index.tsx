@@ -21,31 +21,31 @@ const ContactSection = () => {
   return (
     <div
       id="contact_section"
-      className="relative bg-[#0E0E0E] px-8 flex items-center justify-center text-white overflow-hidden"
+      className="relative bg-[#0E0E0E] pt-5 pb-28 text-center text-white overflow-hidden"
     >
       <div
         ref={containerRef}
-        className="container mx-auto py-28 text-center"
+        className="w-full max-w-[78rem] px-6 mx-auto "
       >
         <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
         >
-          <motion.h1 className={`${anta.className} text-4xl md:text-5xl lg:text-7xl xl:text-[85px]`} variants={itemVariants}>
-            Ready To Transform Your Enterprise <br />
+          <motion.h1 className={`${anta.className} text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight`} variants={itemVariants}>
+            Ready To Transform Your Enterprise 
             and Your Material Discovery?
           </motion.h1>
-          <motion.p className="font-light text-xl md:text-2xl lg:text-3xl pt-6 md:pt-9" variants={itemVariants}>
-            Join the Cognitive Graph Journey. <br /> Discover how QUNEU can accelerate your innovation cycles and unlock new possibilities.
+          <motion.p className="font-light text-lg md:text-xl lg:text-2xl pt-6 md:pt-9" variants={itemVariants}>
+            Join the Cognitive Graph Journey. <br/> Discover how QUNEU can accelerate your innovation cycles and unlock new possibilities.
           </motion.p>
           <motion.div variants={itemVariants}>
             <button type="button"
               className={`${anta.className} bg-cyan-500 text-white cursor-pointer hover:text-cyan-500 hover:bg-[#FFF] transition-colors
-            text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl rounded-xl 
-            px-7 lg:px-12 xl:px-16 
-            py-3 lg:py-5 xl:py-8 
-            mt-16 md:mt-20 lg:mt-24 `}
+            text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl rounded-xl 
+            px-7 lg:px-10 xl:px-12 
+            py-3 lg:py-4 xl:py-6 
+            mt-11 md:mt-16 lg:mt-20 `}
             >
               Schedule a demo
             </button>
