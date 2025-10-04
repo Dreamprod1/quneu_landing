@@ -3,10 +3,10 @@
 }
 
 .qunueprocess-flow-wrapper .title {
-	font-size: 2.7rem;
+	font-size: 2.4rem;
 }
 .qunueprocess-flow-wrapper .subTitle {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .qunueprocess-flow-wrapper .description {
@@ -119,6 +119,13 @@
         left: .4%;
         border-radius: 1rem;
     }
+
+     .qunueprocess-flow-wrapper .title {
+	font-size: 2.1rem;
+}
+.qunueprocess-flow-wrapper .subTitle {
+    font-size: 1.1rem;
+}
 
 }
 

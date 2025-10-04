@@ -1,4 +1,14 @@
-.cognitivelyaer-chart-wrapper{margin-top:5rem;}
+.cognitivelyaer-chart-wrapper{margin-top:7rem;}
+.cognitivelyaer-chart-wrapper .line-0 {
+	width: 98%;
+	height: 55px;
+	top: -55px;
+	border-top: 2px solid;
+	border-left: 2px solid;
+	border-top-left-radius: 18px;
+	position: absolute;
+	left: 0.6%;
+}
 .cognitivelyaer-chart-wrapper .line-1 {
 	border-bottom: 2px solid;
 	border-left: 2px solid;
@@ -159,20 +169,22 @@
 
 @media (max-width: 1350px) {
 .cognitivelyaer-chart-wrapper .line-1 {
-
 	left:0;
+}
+.cognitivelyaer-chart-wrapper .line-0 {
+	left: 0;
 }
 }
 @media (max-width: 1279px) {
 
     /** xl**/
     .cognitivelyaer-chart-wrapper {
-        margin-top: 70px;
+        margin-top: 103px;
     }
 
     .cognitivelyaer-chart-wrapper .line-1 {
 	width: 45.5%;
-	top: .5%;
+	top: 0;
 }
 
     .cognitivelyaer-chart-wrapper .line-2 {
@@ -183,11 +195,10 @@
     }
 
     .cognitivelyaer-chart-wrapper .shap-1 {
-        position: absolute;
-        top: 0%;
-        left: 72%;
-        scale: 0.55;
-    }
+	top: 0.5%;
+	left: 72%;
+	scale: .55;
+}
 
     .cognitivelyaer-chart-wrapper .shap-2 {
         top: 16.6%;
@@ -270,9 +281,30 @@
     }
 }
 
+@media (max-width: 1207px) {
+ .cognitivelyaer-chart-wrapper {
+	margin-top: 107px;
+}
+.cognitivelyaer-chart-wrapper .line-1 {
+	width: 45.5%;
+	top: -10px;
+}
+}
+@media (max-width: 1070px) {
+ .cognitivelyaer-chart-wrapper {
+	margin-top: 112px;
+   }
+   .cognitivelyaer-chart-wrapper .line-1 {
+	width: 45.5%;
+	top: -21px;
+}
+}
 @media (max-width: 1023px) {
 
     /** lg**/
+    .cognitivelyaer-chart-wrapper {
+	margin-top: 99px;
+   }
     .cognitivelyaer-chart-wrapper .shap-2 {
         top: 15.5%;
         left: 60.2%;
@@ -280,10 +312,10 @@
     }
 
     .cognitivelyaer-chart-wrapper .line-2 {
-        width: 20%;
-        top: 5.5%;
-        left: 53.9%;
-    }
+	width: 20%;
+	top: 5.2%;
+	left: 53.9%;
+}
 
     .cognitivelyaer-chart-wrapper .shap-3 {
         top: 37.2%;
@@ -357,6 +389,16 @@
     }
 }
 
+@media (max-width: 998px) {
+ .cognitivelyaer-chart-wrapper {
+	margin-top: 104px;
+   }
+}
+@media (max-width: 880px) {
+ .cognitivelyaer-chart-wrapper {
+	margin-top: 107px;
+   }
+}
 @media (max-width: 767px) {
 
     /** md**/
@@ -365,6 +407,7 @@
     }
 
     .cognitivelyaer-chart-wrapper .shap-1,
+    .cognitivelyaer-chart-wrapper .line-0,
     .cognitivelyaer-chart-wrapper .line-2,
     .cognitivelyaer-chart-wrapper .line-1 {
         display: none;

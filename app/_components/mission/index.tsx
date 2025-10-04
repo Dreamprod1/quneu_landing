@@ -73,7 +73,7 @@ const MissionSection = () => {
             </div>
             <h3 className={`${anta.className} text-white text-center
             text-lg md:text-2xl lg:text-3xl xl:text-4xl `}>OUR VALUES</h3>
-            <div className="border rounded-2xl flex-1  bg-[url('/images/mission-box-bg-3.png')] bg-right-bottom bg-cover bg-no-repeat
+            <div className="border rounded-2xl flex-1 bg-right-bottom bg-cover bg-no-repeat
             mt-3 md:mt-5  
             p-6 md:p-9 
             pb-9 md:pb-11 lg:pb-12 xl:pb-16  ">

@@ -4,11 +4,10 @@ import { anta } from "@/lib/fonts";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { HighlightedText } from "@/components/ui/HighlightedText";
 const QunueProcess = () => {
-  const headingVariants = { initial: { opacity: 0, y: -50 }, animate: { opacity: 1, y: 0, transition: { duration: 0.8 } } };
+  
   const boxVariants = { initial: { opacity: 0, scale: 0.2 }, animate: { opacity: 1, scale: 1, transition: { duration: 0.8, delay: 1 } } };
-  const Ref_title_1 = useRef(null);
-  const isInView_title_1 = useInView(Ref_title_1, { once: true, amount: 0.2 });
   const Ref_box_1 = useRef(null);
   const isInView_box_1 = useInView(Ref_box_1, { once: true, amount: 0.2 });
   const Ref_box_2 = useRef(null);
@@ -20,14 +19,13 @@ const QunueProcess = () => {
       className="relative bg-[url('/images/QuneuProcess-bg-1.png')] bg-no-repeat bg-top-left bg-cover pt-10 md:pt-12 pb-2 text-white overflow-hidden"
     >
       <div className="w-full max-w-[82rem] px-6 mx-auto">
-        <motion.h2
-          className={`${anta.className} text-stroke-light2 text-center tracking-widest
-          text-3xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-9xl 
+        <h2
+          className={`${anta.className} text-center tracking-tight
+          text-3xl sm:text-6xl md:text-7xl lg:text-8xl 
           leading-5xl md:leading-7xl lg:leading-9xl xl:leading-[188px] 
-          font-bold text-gray-100 drop-shadow`}
-          variants={headingVariants} initial="initial" ref={Ref_title_1} animate={isInView_title_1 ? "animate" : "initial"}  >
-          QUNEU PROCESS
-        </motion.h2>
+          font-bold`}>
+          <HighlightedText delay={0} text={`QUNEU PROCESS`} />
+        </h2>
         <div className="qunueprocess-flow-wrapper relative">
           <Image src="/images/QuneuProcess-img-1.png" alt="quen process" width={1114} height={1974} className="mx-auto" />
           <div className="line_1">
