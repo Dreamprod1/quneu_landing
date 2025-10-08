@@ -1,45 +1,30 @@
 "use client";
 import React from "react";
-import { motion, useInView } from "framer-motion";
 import { anta } from "@/lib/fonts";
 import Image from "next/image";
+import { HighlightedText } from "@/components/ui/HighlightedText";
 const GraphInfoSection = () => {
-  const fadeInLeft = { hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } };
-  const fadeInRight = { hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } };
-  const fadeInScale = { hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { duration: 1.0 } } };
-  const refTitle = React.useRef(null);
-  const inViewTitle = useInView(refTitle, { once: true, amount: 0.5 });
-  const refImage = React.useRef(null);
-  const inViewImage = useInView(refImage, { once: true, amount: 0.5 });
-  const refParagraph = React.useRef(null);
-  const inViewParagraph = useInView(refParagraph, { once: true, amount: 0.5 });
   return (
-    <div id="graph_info_section" className="relative bg-[#78BAC9] px-8 text-black overflow-hidden
-    pt-16 md:pt-20 lg:pt-24  
-    pb-10 sm:pb-12 md:pb-20 lg:pb-24 xl:pb-32 2xl:pb-36 
-    ">
-      <div className="container mx-auto">
-        <div className="flex flex-col items-center
-        md:flex-row  
-        gap-4 md:gap-8 lg:gap-12 xl:gap-16">
-          <motion.div ref={refTitle} initial="hidden" animate={inViewTitle ? "visible" : "hidden"} variants={fadeInLeft}>
-            <div className="flex flex-col">
-              <h3 className={`${anta.className} text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[180px]`}>QGRAPH</h3>
-              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-stroke-dark">THE POWER OF QGRAPH</p>
-            </div>
-          </motion.div>
-          <motion.div ref={refImage} initial="hidden" animate={inViewImage ? "visible" : "hidden"} variants={fadeInRight} className="mt-8 md:mt-0">
-            <Image src="/images/QGRAPH-patters.png" alt="graph" width={779} height={308} />
-          </motion.div>
+    <div id="graph_info_section" className="relative bg-[#78BAC9]  text-black overflow-hidden pt-6 pb-6">
+      <div className="w-full max-w-[82rem] px-6 mx-auto">
+        <div className="flex flex-col md:flex-row items-center pt-5 md:pt-3 md:gap-16">
+          <Image src="/images/qgraph-leftimg.png" alt="graph" width={233} height={590} className="hidden md:block" />
+          <div>
+            <h3 className={`${anta.className} text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-widest`}>
+              <HighlightedText delay={0} text={`QGRAPH`} />
+            </h3>
+            <p className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-black text-stroke-dark">
+              <HighlightedText delay={1} text={`THE POWER OF QGRAPH`} />
+            </p>
+            <p className="mt-8 md:mt-10 text-base sm:text-lg md:text-xl lg:text-2xl text-justify">
+              <HighlightedText delay={2} text={` Q0 demystifies the process of knowledge graph creation by automatically providing a dynamic representation of data processing events and
+              contextual reasoning,  and allows your business to intelligently  grow, eliminating uncertainties in a secure and cost-efficient way.
+              With Q0, your organization gains more than insights — it builds a neural network system that not only prepares you for what’s ahead,
+              but also establishes a framework that prevents the same issues from recurring. As your organization changes and new employees join,
+              your domain remains intact, ensuring continuity and knowledge acquisition as your organization grows.`} />
+            </p>
+          </div>
         </div>
-        <motion.div ref={refParagraph} initial="hidden" animate={inViewParagraph ? "visible" : "hidden"} variants={fadeInScale} className="mt-10 md:mt-12 lg:mt-20">
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl">
-            Q0 demystifies the process of knowledge graph creation by automatically providing a dynamic representation of data processing events and contextual reasoning, and allows
-            your business to intelligently grow, eliminating uncertainties in a secure and cost-efficient way. With Q0, your organization gains more than insights — it builds a neural
-            network system that not only prepares you for what’s ahead, but also establishes a framework that prevents the same issues from recurring. As your organization changes and
-            new employees join, your domain remains intact, ensuring continuity and knowledge acquisition as your organization grows.
-          </p>
-        </motion.div>
       </div>
     </div>
   );

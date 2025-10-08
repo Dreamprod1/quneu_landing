@@ -2,39 +2,60 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-const highlightVariants = {
-    hidden: { width: 0 },
-    visible: (i) => ({
-        width: "100%",
-        transition: {
-            duration: 1,
-            ease: "easeInOut",
-            delay: i * 0.5
-        }
-    })
-};
-
-export const HighlightedTextCyan = ({ text, delay = 0 }) => {
-    const ref = useRef(null);
-    const inView = useInView(ref, { once: false, amount: 0.5 });
-
+export const HighlightedTextCyan = ({ text, delay = 1 }) => {
+     const ref = useRef(null);
+    const inView = useInView(ref, { once: true, amount: 0.5 });
+    const highlightWipe = {
+        hidden: { '--highlightProgress': 0 },
+        visible:(i) => ({ '--highlightProgress': '300%', transition: { duration: 1.5, delay: i * 0.5 } })
+    };
     return (
-        <div ref={ref} className="relative inline-block overflow-hidden align-bottom">
-            <span className="relative z-10">{text}</span>
-            <motion.span className={`absolute bottom-0 left-0 h-3 bg-[#62B8CC] opacity-60 rounded-md`}
-                initial="hidden" animate={inView ? "visible" : "hidden"} variants={highlightVariants} custom={delay} />
-        </div>
+        <motion.span
+            ref={ref}
+            className="HighlightedTextCyan_wrapper_1"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={highlightWipe}
+            custom={delay}
+            dangerouslySetInnerHTML={{ __html: text }}
+        />
     );
 };
-export const HighlightedTextAmber = ({ text, delay = 0 }) => {
+export const HighlightedTextAmber = ({ text, delay = 1 }) => {
     const ref = useRef(null);
-    const inView = useInView(ref, { once: false, amount: 0.5 });
-
+    const inView = useInView(ref, { once: true, amount: 0.5 });
+    const highlightWipe = {
+        hidden: { '--highlightProgress': 0 },
+        visible:(i) => ({ '--highlightProgress': '300%', transition: { duration: 1.5, delay: i * 0.5 } })
+    };
     return (
-        <div ref={ref} className="relative inline-block overflow-hidden align-bottom">
-            <span className="relative z-10">{text}</span>
-            <motion.span className={`absolute bottom-0 left-0 h-3 bg-[#AE2637] opacity-60 rounded-md`}
-                initial="hidden" animate={inView ? "visible" : "hidden"} variants={highlightVariants} custom={delay} />
-        </div>
+        <motion.span
+            ref={ref}
+            className="HighlightedTextAmber_wrapper_1"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={highlightWipe}
+            custom={delay}
+            dangerouslySetInnerHTML={{ __html: text }}
+        />
+    );
+};
+export const HighlightedText = ({ text, delay = 1 }) => {
+    const ref = useRef(null);
+    const inView = useInView(ref, { once: true, amount: 0.5 });
+    const highlightWipe = {
+        hidden: { '--highlightProgress': 0 },
+        visible:(i) => ({ '--highlightProgress': '300%', transition: { duration: 1.5, delay: i * 0.5 } })
+    };
+    return (
+        <motion.span
+            ref={ref}
+            className="HighlightedText_wrapper_1"
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={highlightWipe}
+            custom={delay}
+            dangerouslySetInnerHTML={{ __html: text }}
+        />
     );
 };

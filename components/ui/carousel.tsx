@@ -1,6 +1,7 @@
 "use client";
 
 import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import * as React from "react";
 import { Button } from "@/components/ui/button";
@@ -44,8 +45,11 @@ function Carousel({ orientation = "horizontal", opts, setApi, plugins, className
     {
       ...opts,
       axis: orientation === "horizontal" ? "x" : "y",
+      loop: true,
+      dragFree: false,
     },
-    plugins
+    // plugins
+    [Autoplay({ delay: 3000, stopOnInteraction: false }), ...(plugins || [])]
   );
   const [canScrollPrev, setCanScrollPrev] = React.useState(false);
   const [canScrollNext, setCanScrollNext] = React.useState(false);
@@ -208,7 +212,7 @@ function CarouselDots({ className, ...props }: React.ComponentProps<"div">) {
       {dots.map((index) => (
         <button
           key={index}
-          onClick={() => api?.scrollTo(index)}
+          // onClick={() => api?.scrollTo(index)}
           className={cn(
             "size-3 rounded-full transition-colors border-2 border-white",
             selectedIndex === index ? "bg-white" : "bg-transparent hover:bg-white/20"

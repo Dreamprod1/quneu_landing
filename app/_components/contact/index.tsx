@@ -1,56 +1,31 @@
 "use client";
 import React from "react";
-import { motion, useInView } from "framer-motion";
 import { anta } from "@/lib/fonts";
+import { HighlightedText } from "@/components/ui/HighlightedText";
 const ContactSection = () => {
-  const containerRef = React.useRef(null);
-  const isInView = useInView(containerRef, { once: true, amount: 0.5 });
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
-  };
-  const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
-  };
+
   return (
-    <div
-      id="contact_section"
-      className="relative bg-[#0E0E0E] px-8 flex items-center justify-center text-white overflow-hidden"
+    <div id="contact_section"
+      className="relative bg-[#0E0E0E] pt-5 pb-28 text-center text-white overflow-hidden"
     >
-      <div
-        ref={containerRef}
-        className="container mx-auto py-28 text-center"
-      >
-        <motion.div
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={containerVariants}
-        >
-          <motion.h1 className={`${anta.className} text-4xl md:text-5xl lg:text-7xl xl:text-[85px]`} variants={itemVariants}>
-            Ready To Transform Your Enterprise <br />
-            and Your Material Discovery?
-          </motion.h1>
-          <motion.p className="font-light text-xl md:text-2xl lg:text-3xl pt-6 md:pt-9" variants={itemVariants}>
-            Join the Cognitive Graph Journey. <br /> Discover how QUNEU can accelerate your innovation cycles and unlock new possibilities.
-          </motion.p>
-          <motion.div variants={itemVariants}>
+      <div className="w-full max-w-[78rem] px-6 mx-auto">
+        <div>
+          <h1 className={`${anta.className} text-[#51AABE] text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight`}>
+            <HighlightedText delay={0} text={`Ready To Transform Your Enterprise and Your Material Discovery?`} /> 
+          </h1>
+          <p className="font-light text-lg md:text-xl lg:text-2xl pt-6 md:pt-9">
+             <HighlightedText delay={1} text={`Join the Cognitive Graph Journey.  <br /> Discover how QUNEU can accelerate your innovation cycles and unlock new possibilities.`} /> 
+          </p>
+          <div>
             <button type="button"
-              className={`${anta.className} bg-cyan-500 text-white cursor-pointer hover:text-cyan-500 hover:bg-[#FFF] transition-colors
-            text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl rounded-xl 
-            px-7 lg:px-12 xl:px-16 
-            py-3 lg:py-5 xl:py-8 
-            mt-16 md:mt-20 lg:mt-24 `}
-            >
-              Schedule a demo
-            </button>
-          </motion.div>
-        </motion.div>
+              className={`${anta.className} border-2 border-white hover:border-black bg-[#0E0E0E] text-white cursor-pointer hover:bg-[#51AABE] transition-colors
+            text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl rounded-xl 
+            px-6 lg:px-9 xl:px-11 
+            py-2 lg:py-3 xl:py-4 
+            mt-9 md:mt-11 lg:mt-16 `}
+            >  Schedule a demo  </button>
+          </div>
+        </div>
       </div>
     </div>
   );
