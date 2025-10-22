@@ -117,7 +117,7 @@ const Q0MaterialDesignModel = () => {
             id="material-design-title"
             className="hidden-animate font-[Anta] font-normal lg:text-[6rem] leading-[100%] text-[39px] text-white mb-4"
           >
-            Q0’S MATERIAL DESIGN MODEL
+            Q0’S FORMULATION DESIGN MODEL
           </h3>
           <h2 className="hidden-animate noto text-outline-white text-transparent leading-[100%] font-bold lg:text-[4rem] text-[31px] mb-5">
             GROWTH & HYPOTHESIS CREATION

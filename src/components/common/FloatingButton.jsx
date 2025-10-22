@@ -50,7 +50,7 @@ const FloatingButton = () => {
     <div
       className={`${
         hidden ? "opacity-0" : "opacity-100"
-      } transition-opacity  z-100 lg:w-[152px] w-[118px] lg:h-[152px] h-[118px] fixed 
+      } cursor-pointer transition-opacity  z-100 lg:w-[152px] w-[118px] lg:h-[152px] h-[118px] fixed 
       lg:right-[151px]
       right-[20px]
       lg:bottom-[80px] 

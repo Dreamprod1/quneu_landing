@@ -54,7 +54,7 @@ const QMatUseCases = () => {
       ></div>
       <div className="relative">
         <h2 className="hidden-animate anta font-normal lg:text-[96px] text-[39px] text-white lg:text-justify text-center mb-[2rem]">
-          QMAT USE CASES
+          QFR USE CASES
         </h2>
         <Slider />
       </div>
