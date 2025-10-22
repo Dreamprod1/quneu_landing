@@ -1,5 +1,5 @@
 import * as React from "react";
-import Logo from "../../../static/logo.png";
+import Logo from "/static/logo.png";
 
 const TopMenu = () => {
   const menuItems = [
