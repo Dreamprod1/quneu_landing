@@ -1,6 +1,6 @@
 import * as React from "react";
-import Gradient6 from "../../assets/GRADIENTS-6-1-2.png";
-import gradient104 from "../../assets/gradient-104x5.png";
+import Gradient6 from "../../../static/GRADIENTS-6-1-2.png";
+import gradient104 from "../../../static/gradient-104x5.png";
 import { useState } from "react";
 
 const ContactForm = () => {

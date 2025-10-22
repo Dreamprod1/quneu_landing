@@ -1,12 +1,12 @@
 import * as React from "react";
-import GradientBottom from "../../assets/gradient-2-1.png";
-import gradient_1 from "../../assets/images/gradient_1.png";
-import gradient_2 from "../../assets/images/gradient_2.png";
-import gradient_3 from "../../assets/images/gradient_3.png";
-import gradient_4 from "../../assets/images/gradient_4.png";
-import CognitiveLayersImg from "../../assets/CognitiveLayers.svg";
-import CognitiveGraph from "../../assets/CognitiveGraph.svg";
-import CognitiveButtons from "../../assets/CognitiveButtons.svg";
+import GradientBottom from "../../../static/gradient-2-1.png";
+import gradient_1 from "../../../static/images/gradient_1.png";
+import gradient_2 from "../../../static/images/gradient_2.png";
+import gradient_3 from "../../../static/images/gradient_3.png";
+import gradient_4 from "../../../static/images/gradient_4.png";
+import CognitiveLayersImg from "../../../static/CognitiveLayers.svg";
+import CognitiveGraph from "../../../static/CognitiveGraph.svg";
+import CognitiveButtons from "../../../static/CognitiveButtons.svg";
 import { ReactSVG } from "react-svg";
 
 const layers = [

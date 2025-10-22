@@ -1,11 +1,11 @@
 import * as React from "react";
-import gradient_1 from "../../assets/gradient-founders.png";
-import Vision from "../../assets/founders/vision@4x 1.svg";
-import Mission from "../../assets/founders/mission@4x 1.svg";
-import Values from "../../assets/founders/values@4x 1.svg";
-import VisionBallsMobile from "../../assets/founders/VisionBallsMobile.svg";
-import GradientBottom from "../../assets/GRADIENTS-4-1-2.png";
-import VisionLine from "../../assets/VisionLine.svg";
+import gradient_1 from "../../../static/gradient-founders.png";
+import Vision from "../../../static/founders/vision@4x 1.svg";
+import Mission from "../../../static/founders/mission@4x 1.svg";
+import Values from "../../../static/founders/values@4x 1.svg";
+import VisionBallsMobile from "../../../static/founders/VisionBallsMobile.svg";
+import GradientBottom from "../../../static/GRADIENTS-4-1-2.png";
+import VisionLine from "../../../static/VisionLine.svg";
 
 const VISION_CARDS = [
   {

@@ -1,9 +1,9 @@
 import * as React from "react";
-import FoundersImage from "../../assets/founders/founders-backgrand.png";
-import GRADIENTS5 from "../../assets/GRADIENTS-5-1.png";
-import Mission from "../../assets/founders/mission@4x 1.svg";
-import Vision from "../../assets/founders/vision@4x 1.svg";
-import FounderCircles from "../../assets/founders/founders-circles.png";
+import FoundersImage from "../../../static/founders/founders-backgrand.png";
+import GRADIENTS5 from "../../../static/GRADIENTS-5-1.png";
+import Mission from "../../../static/founders/mission@4x 1.svg";
+import Vision from "../../../static/founders/vision@4x 1.svg";
+import FounderCircles from "../../../static/founders/founders-circles.png";
 
 const FOUNDERS_DATA = [
   {

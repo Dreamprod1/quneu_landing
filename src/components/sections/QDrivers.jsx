@@ -1,6 +1,6 @@
 import React from "react";
-import GradientBackground from "../../assets/gradient-7.png";
-import QDriversImage from "../../assets/QDriversImage.svg";
+import GradientBackground from "../../../static/gradient-7.png";
+import QDriversImage from "../../../static/QDriversImage.svg";
 
 const CONTENT = {
   title: "QDRIVERS",

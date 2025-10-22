@@ -1,11 +1,11 @@
 import * as React from "react";
-import MaterialDesignModelImg from "../../assets/material-design-model.png";
-import GradientMaterialDesignModel from "../../assets/gradient-material.png";
-import Eclypse1 from "../../assets/eclypses/Ellipse 4.svg";
-import Eclypse2 from "../../assets/eclypses/Group 21.svg";
-import Eclypse3 from "../../assets/eclypses/Group 22.svg";
-import Eclypse4 from "../../assets/eclypses/Group 21.svg";
-import Eclypse5 from "../../assets/eclypses/Group 72.svg";
+import MaterialDesignModelImg from "../../../static/material-design-model.png";
+import GradientMaterialDesignModel from "../../../static/gradient-material.png";
+import Eclypse1 from "../../../static/eclypses/Ellipse 4.svg";
+import Eclypse2 from "../../../static/eclypses/Group 21.svg";
+import Eclypse3 from "../../../static/eclypses/Group 22.svg";
+import Eclypse4 from "../../../static/eclypses/Group 21.svg";
+import Eclypse5 from "../../../static/eclypses/Group 72.svg";
 
 const FEATURES = [
   {

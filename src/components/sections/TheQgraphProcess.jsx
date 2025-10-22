@@ -1,6 +1,6 @@
 import React from "react";
-import funnel from "../../assets/THEQGRAPHPROCESS.svg";
-import FunnelMobile from "../../assets/FunnelMObile.svg";
+import funnel from "../../../static/THEQGRAPHPROCESS.svg";
+import FunnelMobile from "../../../static/FunnelMObile.svg";
 
 const STEPS = [
   {

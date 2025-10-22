@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import Gradient6 from "../../assets/GRADIENTS-6-1.png";
+import Gradient6 from "../../../static/GRADIENTS-6-1.png";
 
 const ScheduleADemo = () => {
   const handleScroll = (targetId) => {

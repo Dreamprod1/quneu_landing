@@ -1,11 +1,11 @@
 import * as React from "react";
-import MaterialDesignModelImg from "../../assets/material-design-model-2.png";
-import catalist from "../../assets/slider/catalist.png";
-import energy from "../../assets/slider/energy.png";
-import materials from "../../assets/slider/materials.png";
-import semi from "../../assets/slider/semi.png";
-import case5 from "../../assets/slider/case-box-bg-5.png";
-import case6 from "../../assets/slider/case-box-bg-6.png";
+import MaterialDesignModelImg from "../../../static/material-design-model-2.png";
+import catalist from "../../../static/slider/catalist.png";
+import energy from "../../../static/slider/energy.png";
+import materials from "../../../static/slider/materials.png";
+import semi from "../../../static/slider/semi.png";
+import case5 from "../../../static/slider/case-box-bg-5.png";
+import case6 from "../../../static/slider/case-box-bg-6.png";
 
 const SLIDES = [
   {
