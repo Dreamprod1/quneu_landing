@@ -1,6 +1,6 @@
 import * as React from "react";
 import TopMenu from "../common/TopMenu";
-import HeroBackgroundImg from "../../../static/hero-background.png";
+import HeroBackgroundImg from "../../../static/hero-background.webp";
 import ArrowIcon from "../../../static/Arrow.svg";
 
 const Header = () => {

@@ -2,7 +2,7 @@ import * as React from "react";
 
 import QlangModelSection from "../../../static/images/QlangModelSection.svg";
 import MicIcon from "../../../static/mic-icon.svg";
-import GradientsQLangImg from "../../../static/GRADIENTS-4-1-2.png";
+import GradientsQLangImg from "../../../static/GRADIENTS-4-1-2.webp";
 
 const QLanguageModel = () => {
   return (

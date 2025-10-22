@@ -1,5 +1,5 @@
 import * as React from "react";
-import GradientBottomDark from "../../../static/GRADIENTS-4-1.png";
+import GradientBottomDark from "../../../static/GRADIENTS-4-1.webp";
 import QGraphImg from "../../../static/QGraphImg.svg";
 
 const QGraph = () => {

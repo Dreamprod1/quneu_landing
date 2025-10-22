@@ -1,6 +1,6 @@
 import * as React from "react";
-import MaterialDesignModelImg from "../../../static/material-design-model.png";
-import GradientMaterialDesignModel from "../../../static/gradient-material.png";
+import MaterialDesignModelImg from "../../../static/material-design-model.webp";
+import GradientMaterialDesignModel from "../../../static/gradient-material.webp";
 import Eclypse1 from "../../../static/eclypses/Ellipse 4.svg";
 import Eclypse2 from "../../../static/eclypses/Group 21.svg";
 import Eclypse3 from "../../../static/eclypses/Group 22.svg";

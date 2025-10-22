@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 
 import Mozaic from "../../../static/mosaic.png";
 import MozaicMobile from "../../../static/mobile-mosaic.svg";
-import GradientBottom from "../../../static/gradient-2-1.png";
+import GradientBottom from "../../../static/gradient-2-1.webp";
 
 const SectionTitle = ({ children, className = "" }) => (
   <h2

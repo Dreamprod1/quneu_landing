@@ -1,9 +1,9 @@
 import * as React from "react";
-import GradientBottom from "../../../static/gradient-2-1.png";
-import gradient_1 from "../../../static/images/gradient_1.png";
-import gradient_2 from "../../../static/images/gradient_2.png";
-import gradient_3 from "../../../static/images/gradient_3.png";
-import gradient_4 from "../../../static/images/gradient_4.png";
+import GradientBottom from "../../../static/gradient-2-1.webp";
+import gradient_1 from "../../../static/images/gradient_1.webp";
+import gradient_2 from "../../../static/images/gradient_2.webp";
+import gradient_3 from "../../../static/images/gradient_3.webp";
+import gradient_4 from "../../../static/images/gradient_4.webp";
 import CognitiveLayersImg from "../../../static/CognitiveLayers.svg";
 import CognitiveGraph from "../../../static/CognitiveGraph.svg";
 import CognitiveButtons from "../../../static/CognitiveButtons.svg";

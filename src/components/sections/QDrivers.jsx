@@ -1,5 +1,5 @@
 import React from "react";
-import GradientBackground from "../../../static/gradient-7.png";
+import GradientBackground from "../../../static/gradient-7.webp";
 import QDriversImage from "../../../static/QDriversImage.svg";
 
 const CONTENT = {
