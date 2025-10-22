@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
+
+.noto {
+    font-family: 'Noto Sans', sans-serif;
+}
+.anta {
+    font-family: 'Anta', sans-serif;
+}
+@layer utilities {
+    .text-outline {
+        -webkit-text-stroke: 1.5px black;
+    }
+    .text-outline-white {
+        -webkit-text-stroke: 1.5px white;
+    }
+}
+
+.custom-text {
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+.hidden-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    will-change: opacity, transform;
+}
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
