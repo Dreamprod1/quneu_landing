@@ -1,5 +1,6 @@
 import * as React from "react";
-import Logo from "/static/logo.png";
+import { StaticImage } from "gatsby-plugin-image";
+import Logo from "../../../static/logo.png";
 
 const TopMenu = () => {
   const menuItems = [
@@ -40,6 +41,8 @@ const TopMenu = () => {
         <img
           src={Logo}
           alt="logo"
+          width={111}
+          height={40}
           className="lg:h-[54px] object-contain
           lg:w-full
         h-[40px] w-[111px]
