@@ -1,6 +1,6 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import Logo from "../../../static/logo.png";
+// import Logo from "../../../static/logo.png";
 
 const TopMenu = () => {
   const menuItems = [
@@ -38,8 +38,8 @@ const TopMenu = () => {
     "
     >
       <div className="self-center lg:order-1 order-2">
-        <img
-          src={Logo}
+        <StaticImage
+          src="../../../static/logo.png"
           alt="logo"
           width={111}
           height={40}
