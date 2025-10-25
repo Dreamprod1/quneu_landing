@@ -97,11 +97,18 @@ const FoundersList = () => (
       >
         <div className="absolute inset-0 w-full bg-black opacity-65" />
         <div className="relative z-10 flex flex-col justify-center h-full">
-          <h3 className="hidden-animate text-xl font-semibold mb-2 text-[white] anta lg:text-[2rem] text-[24px]">
+          <h3
+            className="hidden-animate text-xl font-semibold mb-2 text-[white] anta
+          xl:text-[2rem]
+          lg:text-[1.5rem]
+          text-[24px]"
+          >
             {founder.name}
           </h3>
           <p
-            className="hidden-animate text-white noto lg:text-xl text-[14px]"
+            className="hidden-animate text-white noto lg:text-xl
+            text-[14px]
+            "
             dangerouslySetInnerHTML={{ __html: founder.description }}
           />
         </div>
@@ -114,7 +121,11 @@ const Founders = () => {
   return (
     <section
       id="about"
-      className="h-full w-full relative lg:px-[187px] px-[36px] "
+      className="h-full w-full relative
+      2xl:px-[187px]
+      xl:px-[103]
+      lg:px-[75px]
+      px-[36px] "
       style={{
         backgroundImage: `url(${GRADIENTS5})`,
         backgroundRepeat: "no-repeat",

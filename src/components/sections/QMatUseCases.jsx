@@ -44,7 +44,7 @@ const QMatUseCases = () => {
   return (
     <div
       className="relative h-full w-full
-
+      lg:px-[107px]
       px-[15px]
       lg:pt-[157px]
       lg:pb-[170px]

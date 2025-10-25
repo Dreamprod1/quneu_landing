@@ -43,9 +43,16 @@ const VisionCard = ({ image, title, text, index }) => (
         backgroundPosition: "center",
       }}
     >
-      <p className="2xl:px-[48px] xl:px-[30px] xl:pt-[30px] p-[20px] noto font-normal xl:text-[20px] text-[13px] xl:leading-[35px] text-justify">
-        {text}
-      </p>
+      <p
+        className="2xl:px-[48px] xl:px-[24px] xl:pt-[30px] p-[20px] noto font-normal
+      2xl:text-[20px]
+      xl:text-[1rem]
+      text-[13px]
+      2xl:leading-[35px]
+      xl:leading-[28px]
+       text-justify"
+        dangerouslySetInnerHTML={{ __html: text }}
+      />
     </div>
   </div>
 );
@@ -67,7 +74,10 @@ const VisionCardMobile = ({ image, title, text }) => (
 const VisionsSection = () => {
   return (
     <div
-      className="h-full w-full xl:px-[187px] px-[36px] pt-[80px] relative py-[2rem]"
+      className="h-full w-full
+      2xl:px-[187px]
+      xl:px-[103px]
+      px-[36px] pt-[80px] relative py-[2rem]"
       style={{
         backgroundImage: `url(${GradientBottom})`,
         backgroundRepeat: "no-repeat",

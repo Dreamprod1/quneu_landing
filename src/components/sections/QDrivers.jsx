@@ -1,6 +1,7 @@
 import React from "react";
 import GradientBackground from "../../../static/gradient-7.webp";
 import QDriversImage from "../../../static/QDriversImage.svg";
+import QDriversImageMobile from "../../../static/qdrivers_mobile.svg";
 
 const CONTENT = {
   title: "QDRIVERS",
@@ -23,14 +24,18 @@ const QDrivers = () => {
   return (
     <section
       id="qdrivers"
-      className="xl:h-dvh h-full w-full
+      className="h-full w-full
+
       2xl:px-[170px]
       xl:px-[103px]
       lg:px-[75px]
-      xl:py-0
+      2xl:py-[260px]
+      xl:py-[160px]
       lg:py-[100px]
       py-[54px]
-      px-[36px] relative lg:bg-center bg-top-right"
+      px-[36px]
+      relative
+      lg:bg-center bg-top-right"
       style={{
         backgroundImage: `url(${GradientBackground})`,
         backgroundRepeat: "no-repeat",
@@ -91,14 +96,23 @@ const QDrivers = () => {
           <img
             src={QDriversImage}
             alt="QDrivers illustration"
-            className="max-w-full xl:h-auto lg:h-[600px] h-[400px] lg:rotate-0 rotate-90 lg:scale-x-[1] scale-x-[-1]"
+            className="max-w-full 2xl:h-auto xl:h-[600px] lg:h-[500px] h-[400px] "
           />
         </aside>
-        <aside className="lg:hidden absolute lg:right-20 left-20 top-3 flex lg:items-center lg:mt-0 mt-10 items-end justify-center lg:h-[100px] h-[300px] lg:pt-0 pt-40">
+        <aside
+          className="lg:hidden
+        absolute
+       left-10
+       top-0
+       items-end
+
+        "
+        >
           <img
-            src={QDriversImage}
+            src={QDriversImageMobile}
             alt="QDrivers illustration"
-            className="max-w-full lg:h-auto h-[400px] lg:rotate-0 rotate-90 lg:scale-x-[1] scale-x-[-1]"
+            className="   h-[370px]
+       w-[270px]"
           />
         </aside>
       </div>
