@@ -74,38 +74,52 @@ const LayerCard = ({ layer }) => {
       key={layer.id}
     >
       <h2
-        className="anta font-normal xl:text-[2.875rem] text-[1.25rem]
+        className="anta font-normal
+        2xl:text-[2.875rem]
+        xl:text-[2.5rem]
+        text-[1.25rem]
       xl:mt-[36.74px]
       mt-[10px]
-      xl:ml-[32px]
+      2xl:ml-[2rem]
+      xl:ml-[1.5rem]
       ml-[10px]
        flex items-start text-[#060405]"
       >
         {layer.label}
       </h2>
       <h2
-        className="anta font-normal xl:text-[2.875rem] text-[1.25rem] mt-[5px] xl:ml-[32px]
+        className="anta font-normal 2xl:text-[2.875rem] xl:text-[2rem] text-[1.25rem] mt-[5px]
+         2xl:ml-[2rem]
+      xl:ml-[1.5rem]
       ml-[10px]  flex items-start custom-text"
         style={{ color: layer.nameColor }}
       >
         {layer.name}
       </h2>
       <h3
-        className="anta font-normal xl:text-[1.875rem] text-[0.8125rem] xl:mt-[14px]  mt-[4px]     xl:ml-[32px]
+        className="anta font-normal 2xl:text-[1.875rem] xl:text-[1.5rem] text-[0.8125rem] xl:mt-[14px]  mt-[4px]
+         2xl:ml-[2rem]
+      xl:ml-[1.5rem]
       ml-[10px]  flex items-start text-[#060405]"
       >
         {layer.subtitle}
       </h3>
 
       <div
-        className="xl:ml-[32px]
-      ml-[10px] xl:mt-[34px] mt-[10px] xl:mr-[32px] mr-[10px]"
+        className="
+        2xl:pl-[2rem]
+        xl:pl-[1.5rem]
+      pl-[10px] xl:pt-[34px] pt-[10px]
+      2xl:pr-[32px]
+      xl:pr-[32px]
+      pr-[10px]
+      "
       >
-        <p className="noto font-normal xl:text-[1.25rem] text-[0.8125rem] xl:w-[351px] text-black  text-justify">
+        <p className="noto font-normal xl:text-[1.25rem] text-[0.8125rem] text-black  text-justify">
           <span dangerouslySetInnerHTML={{ __html: layer.paragraphs[0] }} />
         </p>
 
-        <p className="xl:mb-0 mb-10 noto font-normal xl:text-[1.25rem] text-[0.8125rem] xl:mt-[33px] mt-[10px] xl:w-[351px] text-black  text-justify">
+        <p className="xl:mb-0 mb-10 noto font-normal xl:text-[1.25rem] text-[0.8125rem] xl:mt-[33px] mt-[10px]  text-black  text-justify">
           <span dangerouslySetInnerHTML={{ __html: layer.paragraphs[1] }} />
         </p>
       </div>
@@ -172,20 +186,41 @@ const CognitiveLayers = () => {
         }}
       />
       <div className="relative">
-        <div className="flex w-full xl:px-[187px] px-[36px] xl:flex-row flex-col">
+        <div
+          className="flex w-full
+        2xl:px-[187px]
+        xl:px-[103px]
+        lg:px-[75px]
+
+        px-[36px] xl:flex-row flex-col"
+        >
           <div>
             <div className="relative z-10">
-              <h2 className="leading-[100%] hidden-animate anta font-normal xl:text-[6rem] text-[2.3125rem] xl:mt-[158px] mt-[35px] text-[#060405] ">
+              <h2
+                className="leading-[100%] hidden-animate anta font-normal
+              2xl:text-[6rem]
+              xl:text-[5rem]
+              lg:text-[4rem]
+
+              text-[2.3125rem] xl:mt-[158px] mt-[35px] text-[#060405] "
+              >
                 COGNITIVE LAYERS
               </h2>
-              <h2 className="hidden-animate noto font-bold xl:text-[4.5625rem] text-[2rem] xl:mt-[71px] mt-[14px] text-[transparent] text-outline flex items-center leading-[38px] tracking-normal">
+              <h2
+                className="hidden-animate noto font-bold
+              2xl:text-[4.5625rem]
+              xl:text-[4rem]
+              lg:text-[3.25rem]
+              text-[2rem] xl:mt-[71px] mt-[14px] text-[transparent] text-outline flex items-center leading-[38px] tracking-normal"
+              >
                 HOW Q0 THINKS
               </h2>
 
               <p
                 className="hidden-animate noto
               font-normal
-              xl:text-[1.5rem]
+              2xl:text-[1.5rem]
+              xl:text-[1.25rem]
               xl:leading-[150%]
               text-[0.8125rem]
               xl:mt-[50px]
@@ -209,7 +244,8 @@ const CognitiveLayers = () => {
               xl:w-2/5
               noto
               font-normal
-              xl:text-[1.5rem]
+              2xl:text-[1.5rem]
+              xl:text-[1.25rem]
               xl:pt-2
               text-[0.8125rem] mt-[13px] text-black text-justify"
               >
@@ -220,7 +256,14 @@ const CognitiveLayers = () => {
             </div>
           </div>
           <div>
-            <aside className="absolute top-43 right-10  hidden xl:flex z-[1]">
+            <aside
+              className="absolute
+            xl:top-42
+            xl:right-10
+            2xl:w-[800px]
+            w-[600px]
+            hidden xl:flex z-[1]"
+            >
               <img
                 src={CognitiveGraph}
                 alt={"CognitiveGraph"}
@@ -228,7 +271,16 @@ const CognitiveLayers = () => {
               />
             </aside>
 
-            <aside className="absolute top-93 right-49  hidden xl:flex z-[1]">
+            <aside
+              className="absolute
+            2xl:top-84
+            xl:top-73
+            2xl:right-39
+            xl:right-35
+            2xl:w-[570px]
+            w-[400px]
+            hidden xl:flex z-[1]"
+            >
               <img
                 src={CognitiveButtons}
                 alt={"CognitiveButtons"}
@@ -238,7 +290,12 @@ const CognitiveLayers = () => {
           </div>
         </div>
 
-        <div className="xl:flex hidden xl:mt-40 xl:gap-[30px] w-full xl:flex-row flex-col xl:px-0 px-10 justify-center xl:pb-[142px]">
+        <div
+          className="xl:flex hidden xl:mt-40
+        xl:gap-[30px]
+        gap-[20px]
+        w-full xl:flex-row flex-col xl:px-0 px-10 justify-center xl:pb-[142px]"
+        >
           {layers.map((layer, idx) => (
             <LayerCard layer={layer} index={idx} key={layer.id} />
           ))}
