@@ -10,7 +10,8 @@ const TopMenu = () => {
     { label: "QMAT", target: "qmat" },
     { label: "QDRIVERS", target: "qdrivers" },
     { label: "About", target: "about" },
-    { label: "Contact", target: "contact" },
+    // { label: "Contact", target: "contact" },
+    { label: "Contact", target: "schedule-a-demo" },
   ];
 
   const handleScroll = (targetId) => {
@@ -41,10 +42,13 @@ const TopMenu = () => {
         <img
           src={Quneu}
           alt="logo"
-          className="lg:h-[54px] object-contain
-          lg:w-full
-        h-[40px] w-[111px]
-
+          className="
+            object-contain
+            xl:h-[54px]
+            md:h-[30px]
+            md:w-full
+            h-[40px]
+            w-[111px]
         "
         />
       </div>
@@ -85,17 +89,22 @@ const TopMenu = () => {
         flex-col  
         xl:px-3 
         lg:px-2
+        md:px-0
         px-4
         py-5
         lg:py-0 
-        gap-2 
         lg:static 
-        text-[1.25rem]
+        xl:text-[1.25rem]
+        md-text-[0.875rem]
+        text-[1rem]
         lg:shadow-none 
         lg:w-auto 
         lg:flex 
         lg:flex-row 
-        lg:gap-16 
+        xl:gap-16 
+        lg:gap-8
+        md:gap-4
+        gap-2
         lg:items-center
         w-full
     

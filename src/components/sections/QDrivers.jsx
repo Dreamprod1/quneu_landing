@@ -23,7 +23,14 @@ const QDrivers = () => {
   return (
     <section
       id="qdrivers"
-      className="xl:h-dvh h-full w-full lg:px-[170px] px-[36px] relative xl:py-0 py-[54px] lg:bg-center bg-top-right"
+      className="xl:h-dvh h-full w-full
+      2xl:px-[170px]
+      xl:px-[103px]
+      lg:px-[75px]
+      xl:py-0
+      lg:py-[100px]
+      py-[54px]
+      px-[36px] relative lg:bg-center bg-top-right"
       style={{
         backgroundImage: `url(${GradientBackground})`,
         backgroundRepeat: "no-repeat",
@@ -32,16 +39,38 @@ const QDrivers = () => {
     >
       <div className="flex h-full items-center lg:flex-row flex-col">
         <article className="lg:w-4/6 flex flex-col">
-          <h2 className="hidden-animate font-['Anta'] font-normal lg:text-[96px] text-[39px] leading-[100%] tracking-[0%] lg:pb-0 pb-27">
+          <h2
+            className="hidden-animate font-['Anta'] font-normal
+          2xl:text-[6rem]
+          xl:text-[5rem]
+          lg:text-[4rem]
+          text-[39px] leading-[100%] tracking-[0%] lg:pb-0 pb-27"
+          >
             {CONTENT.title}
           </h2>
-          <h3 className="hidden-animate noto font-bold lg:text-[64px] text-[32px] text-outline leading-[100%] mt-4 text-transparent">
+          <h3
+            className="hidden-animate noto font-bold
+          2xl:text-[4rem]
+          xl:text-[3rem]
+          lg:text-[2.5rem]
+          text-[32px] text-outline leading-[100%] mt-4 text-transparent"
+          >
             {CONTENT.subtitle}
           </h3>
-          <h4 className="hidden-animate lg:pt-[64px] pt-[30px] noto font-semibold lg:text-[36px] text-[16px] leading-[100%] tracking-[0%] text-justify">
+          <h4
+            className="hidden-animate lg:pt-[64px] pt-[30px] noto font-semibold
+          xl:text-[2rem]
+          lg:text-[1.5rem]
+          text-[1rem] leading-[100%] tracking-[0%] text-justify"
+          >
             {CONTENT.kicker}
           </h4>
-          <div className="hidden-animate lg:pt-6 pt-4 noto font-normal lg:text-[1.5rem] text-[13px] text-justify">
+          <div
+            className="hidden-animate lg:pt-6 pt-4 noto font-normal
+          2xl:text-[1.5rem]
+          lg:text-[1.25rem]
+          text-[13px] text-justify"
+          >
             {CONTENT.description}
           </div>
         </article>

@@ -49,7 +49,7 @@ export default function Home() {
       <Founders />
       <div id="no-button-section">
         <ScheduleADemo />
-        <ContactForm />
+        {/*<ContactForm />*/}
       </div>
     </div>
   );

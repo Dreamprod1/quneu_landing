@@ -38,7 +38,13 @@ export default function TheQGraphProcess() {
         }}
       />
       <div className="flex flex-col">
-        <h2 className="hidden-animate font-['Anta'] font-normal lg:text-[6rem] text-[2.4375rem] lg:pt-10 lg:text-center leading-[140%] text-white">
+        <h2
+          className="hidden-animate font-['Anta'] font-normal
+        2xl:text-[6rem]
+        lg:text-[4rem]
+        lg:leading-[120%]
+        text-[2.4375rem] lg:pt-10 lg:text-center leading-[140%] text-white"
+        >
           THE QGRAPH <br />
           PROCESS
         </h2>

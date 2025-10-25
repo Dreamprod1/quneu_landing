@@ -47,24 +47,24 @@ const FeatureCard = ({ feature, index }) => (
   <div className="hidden-animate relative flex lg:flex-col flex-row w-full items-center gap-[0.5rem]">
     <div
       className={`
-      lg:w-[110%]
+      lg:w-[calc(100%+6rem)]
       lg:h-[1.5px]
       absolute inset-0
       content-[''] w-[1px] h-[110%]
       left-[6px] bg-white
       lg:left-0
       lg:top-[28px]
-      z-0
+      z-1
       
-      ${index === 0 ? "top-[50%] lg:left-[50%]" : ""}
-      ${index === 4 ? "-top-[40px] lg:left-[-60%]" : ""}
+      ${index === 0 ? "top-[50%] lg:left-[50%] lg:w-full" : ""}
+      ${index === 4 ? "-top-[40px] lg:left-[-60%] lg:w-full" : ""}
       `}
     />
     <img
       src={feature.symbol}
       key={feature.title}
       alt={`Feature symbol ${feature.title + 1}`}
-      className="mx-auto lg:h-[56px] h-[14px] lg:w-[56px] w-[14px] relative z-10"
+      className="] mx-auto lg:h-[56px] h-[14px] lg:w-[56px] w-[14px] relative z-100"
     />
 
     <div
@@ -85,14 +85,23 @@ const FeatureCard = ({ feature, index }) => (
       my-[7px]
       lg:h-[72px]
       anta text-[#51AABE] lg:text-center
-      lg:text-[1.5rem]
-      text-[17px] font-normal  leading-[24px] tracking-[0%]
+      xl:text-[1.5rem]
+      lg:text-[1.25rem]
+      text-[1rem] font-normal  leading-[24px] tracking-[0%]
       px-[0.875rem]
       "
       >
         {feature.title}
       </h3>
-      <p className="lg:border-t lg:border-white noto text-white lg:text-[18px] text-[13px] font-normal lg:p-5 px-[0.875rem] pb-[1rem] text-justify">
+      <p
+        className="lg:border-t lg:border-white noto text-white
+      xl:text-[18px]
+      lg:text[1rem]
+      text-[13px] font-normal
+      xl:p-5
+      lg:p-3
+      px-[0.875rem] pb-[1rem] text-justify"
+      >
         {feature.content}
       </p>
     </div>
@@ -101,7 +110,13 @@ const FeatureCard = ({ feature, index }) => (
 
 const Q0MaterialDesignModel = () => {
   return (
-    <section className="h-full w-full relative lg:px-[184px] px-[36px] bg-white xl:py-[130px] py-[1.5rem]">
+    <section
+      className="h-full w-full relative
+    2xl:px-[184px]
+    xl:px-[103px]
+    lg:px-[75px]
+    px-[36px] bg-white xl:py-[130px] lg:py-[100px] py-[1.5rem]"
+    >
       <div
         className="absolute inset-0 pointer-events-none bg-no-repeat bg-bottom bg-initial"
         style={{
@@ -115,16 +130,32 @@ const Q0MaterialDesignModel = () => {
         <div>
           <h3
             id="material-design-title"
-            className="hidden-animate font-[Anta] font-normal lg:text-[6rem] leading-[100%] text-[39px] text-white mb-4"
+            className="hidden-animate font-[Anta] font-normal
+            2xl:text-[6rem]
+            xl:text-[5rem]
+            lg:text-[4rem]
+
+            leading-[100%] text-[39px] text-white mb-4"
           >
             Q0’S FORMULATION DESIGN MODEL
           </h3>
-          <h2 className="hidden-animate noto text-outline-white text-transparent leading-[100%] font-bold lg:text-[4rem] text-[31px] mb-5">
+          <h2
+            className="hidden-animate noto text-outline-white text-transparent leading-[100%] font-bold
+          2xl:text-[4rem]
+          xl:text-[3rem]
+          lg:text-[2.5rem]
+          text-[2rem] mb-5"
+          >
             GROWTH & HYPOTHESIS CREATION
           </h2>
         </div>
         <div className="lg:mb-10 mb-[19px]">
-          <p className="hidden-animate noto text-white font-normal lg:text-[1.5rem] text-[13px] lg:leading-[100%] leading-[130%] tracking-normal text-justify mb-4">
+          <p
+            className="hidden-animate noto text-white font-normal
+          xl:text-[1.5rem]
+          lg:text-[1.25rem]
+          text-[13px] lg:leading-[100%] leading-[130%] tracking-normal text-justify mb-4"
+          >
             <b>QMAT</b> starts with target properties—like high conductivity or
             extreme durability—and intelligently generates complete, physically
             viable crystal structures that meet those exact specifications.
@@ -132,7 +163,12 @@ const Q0MaterialDesignModel = () => {
             don't yet exist.
           </p>
 
-          <p className="hidden-animate noto text-white font-normal lg:text-[1.5rem] text-[13px] lg:leading-[100%] leading-[130%] tracking-normal text-justify">
+          <p
+            className="hidden-animate noto text-white font-normal
+          xl:text-[1.5rem]
+          lg:text-[1.25rem]
+          text-[13px] lg:leading-[100%] leading-[130%] tracking-normal text-justify"
+          >
             Partnering with us gives you access to a generative AI tool that
             creates novel materials on-demand based on specified design
             requirements, rather than screening existing candidates and
@@ -141,7 +177,7 @@ const Q0MaterialDesignModel = () => {
             <b>With QMAT, you can:</b>
           </p>
         </div>
-        <div className="flex lg:gap-6 gap-[0.5rem] lg:flex-row flex-col">
+        <div className="flex xl:gap-6 lg:gap-4 gap-[0.5rem] lg:flex-row flex-col">
           {FEATURES.map((feature, index) => (
             <FeatureCard feature={feature} index={index} key={feature.id} />
           ))}

@@ -3,12 +3,12 @@ import * as React from "react";
 import Gradient6 from "../../../static/GRADIENTS-6-1.webp";
 
 const ScheduleADemo = () => {
-  const handleScroll = (targetId) => {
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const handleScroll = (targetId) => {
+  //   const element = document.getElementById(targetId);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
   return (
     <div
@@ -22,13 +22,22 @@ const ScheduleADemo = () => {
       }}
     >
       <div className="flex flex-col lg:px-40 px-[36px] h-full justify-center">
-        <h2 className="hidden-animate text-[#51AABE] lg:text-center text-left anta font-normal not-italic lg:text-[64px] text-[1.5rem] lg:leading-[100%] leading-[110%] tracking-normal">
+        <h2
+          className="hidden-animate text-[#51AABE] lg:text-center text-left anta font-normal not-italic
+        2xl:text-[4rem]
+        xl:text-[3rem]
+        lg:text-[2.5rem]
+        text-[1.5rem] lg:leading-[100%] leading-[110%] tracking-normal"
+        >
           Ready To Transform Your Enterprise? <br />
           Ready To Transform Your Material Discovery?
         </h2>
         <p
           className="hidden-animate lg:pt-[40px] pt-[1.275rem]
-        text-white noto lg:text-center font-light lg:text-[2rem] text-[0.9rem] lg:leading-[130%] leading-[130%]
+        text-white noto lg:text-center font-light
+        xl:text-[2rem]
+        lg:text-[1.5rem]
+        text-[0.9rem] lg:leading-[130%] leading-[130%]
         tracking-normal"
         >
           Join the Cognitive Graph Journey. <br />
@@ -37,12 +46,18 @@ const ScheduleADemo = () => {
         </p>
         <div className="hidden-animate justify-center flex lg:pt-[86px] pt-[2.5rem]">
           <button
-            onClick={() => handleScroll("contact")}
-            type="button"
+            onClick={() =>
+              (window.location.href =
+                "mailto:info@quenue.com?subject=Schedule%20a%20Demo")
+            }
+            type="type"
             className="
             cursor-pointer
             lg:py-[30px] py-[15px] lg:px-[70px] px-[30px]
-            anta font-normal lg:text-[36px] text-[16px]
+            anta font-normal
+            2xl:text-[2rem]
+            lg:text-[1.5rem]
+            text-[16px]
             leading-[100%] tracking-normal
             text-center
 

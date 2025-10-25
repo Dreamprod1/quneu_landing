@@ -20,11 +20,23 @@ const FOUNDERS_DATA = [
 
 const FoundersInfo = () => (
   <div className="lg:pb-20">
-    <h2 className="hidden-animate pb-[1.5rem] font-['Anta'] font-normal not-italic lg:text-[96px] text-[39px] leading-[100%] tracking-[0%]">
+    <h2
+      className="hidden-animate pb-[1.5rem] font-['Anta'] font-normal not-italic
+    2xl:text-[6rem]
+    xl:text-[5rem]
+    lg:text-[4rem]
+
+    text-[39px] leading-[100%] tracking-[0%]"
+    >
       FOUNDERS
     </h2>
     <div className="space-y-4">
-      <p className="hidden-animate noto font-light lg:text-[1.5rem] text-[13px] leading-[120%] tracking-[0%] text-justify">
+      <p
+        className="hidden-animate noto font-light
+      xl:text-[1.5rem]
+      lg:text-[1.25rem]
+      text-[13px] leading-[120%] tracking-[0%] text-justify"
+      >
         Our team unites experts in{" "}
         <span className="font-bold">
           neuroscience, ontology, AI, manufacturing, software development,
@@ -37,13 +49,23 @@ const FoundersInfo = () => (
         ecosystems.
       </p>
 
-      <p className="hidden-animate noto font-normal lg:text-[1.5rem] text-[13px] leading-[120%] tracking-[0%] text-justify">
+      <p
+        className="hidden-animate noto font-normal
+      xl:text-[1.5rem]
+      lg:text-[1.25rem]
+      text-[13px] leading-[120%] tracking-[0%] text-justify"
+      >
         Headquartered in the United States and the Netherlands, we operate at
         the intersection of global innovation hubs, giving us both a
         transatlantic presence and strong ties to advanced technology markets.
       </p>
 
-      <p className="hidden-animate noto font-normal lg:text-[1.5rem] text-[13px] leading-[120%] text-justify lg:w-3/4">
+      <p
+        className="hidden-animate noto font-normal
+      xl:text-[1.5rem]
+      lg:text-[1.25rem]
+      text-[13px] leading-[120%] text-justify lg:w-3/4"
+      >
         Rather than replicate industry-specific expertise, we bring a
         complementary perspective that transforms organizational complexity into
         living, actionable intelligence — helping enterprises preserve critical

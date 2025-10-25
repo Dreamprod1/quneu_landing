@@ -43,7 +43,15 @@ const SLIDES = [
 const QMatUseCases = () => {
   return (
     <div
-      className="h-full w-full lg:p-[110px] px-[15px] relative lg:pt-[157px] lg:pb-[170px] py-[2rem] pb-[4rem]"
+      className="relative h-full w-full
+
+      px-[15px]
+      lg:pt-[157px]
+      lg:pb-[170px]
+      xl:py-[100px]
+      lg:py-[50px]
+      py-[2rem]
+      pb-[4rem]"
       id="qmat"
     >
       <div
@@ -53,7 +61,13 @@ const QMatUseCases = () => {
         }}
       ></div>
       <div className="relative">
-        <h2 className="hidden-animate anta font-normal lg:text-[96px] text-[39px] text-white lg:text-justify text-center mb-[2rem]">
+        <h2
+          className="hidden-animate anta font-normal
+        2xl:text-[6rem]
+        xl:text-[4rem]
+        lg:text-[4rem]
+        text-[2.5rem] text-white lg:text-justify text-center mb-[2rem]"
+        >
           QFR USE CASES
         </h2>
         <Slider />
@@ -199,7 +213,13 @@ const Slider = () => {
               }}
             >
               <div className="absolute inset-0 flex items-center justify-center w-full bg-black opacity-25" />
-              <h2 className="wrap-anywhere lg:mb-4 mb-[0.5rem] text-wrap relative anta font-normal lg:text-[64px] text-[1.5rem] leading-none tracking-normal">
+              <h2
+                className="wrap-anywhere lg:mb-4 mb-[0.5rem] text-wrap relative anta font-normal
+              2xl:text-[4rem]
+              xl:text-[3rem]
+              lg:text-[2rem]
+              text-[1.5rem] leading-none tracking-normal"
+              >
                 {slide.title}
               </h2>
               <p className="relative noto font-normal lg:text-[36px] text-[13px] leading-none tracking-normal">

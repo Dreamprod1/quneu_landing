@@ -1,58 +1,76 @@
 import * as React from "react";
-import GradientBottomDark from "../../../static/GRADIENTS-4-1.webp";
 import QGraphImg from "../../../static/QGraphImg.svg";
+import QGraphImgMobile from "../../../static/QGRAPH_mobile.svg";
 
 const QGraph = () => {
   return (
     <div
       id="qgraph"
-      className="h-full w-full lg:px-[187px] px-[36px] relative bg-[#D9D9D9] pt-[1rem] pb-[3rem]"
+      className="h-full w-full
+      2xl:px-[187px]
+      xl:px-[103px]
+      lg:px-[75px]
+      px-[36px] relative bg-[#D9D9D9] lg:py-[100px] pt-[1rem] pb-[6rem]
+      "
       style={{
-        backgroundImage: `url(${GradientBottomDark})`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "bottom",
-        backgroundSize: "cover",
+        backgroundImage:
+          "linear-gradient(to bottom, #D9D9D9 50%, #AAA99B 90%, #0D1B1D 100%)",
       }}
     >
       <div
         className="flex
           lg:flex-row
           flex-col
-          lg:gap-20
+          2xl:gap-20
+          lg:gap-10
           h-full
           justify-center
           items-center"
       >
-        <aside className="hidden-animate relative lg:flex-1/5 lg:h-full h-[200px] flex items-center">
+        <aside className="hidden-animate relative w-full flex justify-center mb-[20px] mt-[45px]">
           <img
             src={QGraphImg}
             alt="qgraph"
             className="
-              lg:h-full
-              h-[360px]
-              lg:object-contain
-              object-scale-down
-              rotate-270
-              lg:rotate-0
-        
+              h-full
+              lg:flex
+              hidden
+              object-contain
+            "
+          />
+          <img
+            src={QGraphImgMobile}
+            alt="qgraph"
+            className="
+              max-w-[500px]
+              w-full
+              lg:hidden
+
             "
           />
         </aside>
-        <div className="lg:flex-4/5 text-black">
-          <h2 className="hidden-animate anta lg:text-[6rem] text-[2.43rem] leading-none font-normal">
+        <div className="text-black">
+          <h2
+            className="hidden-animate anta
+          2xl:text-[6rem]
+          lg:text-[5rem]
+          text-[2.43rem] leading-none font-normal"
+          >
             QGRAPH
           </h2>
           <h2
             className="hidden-animate
             noto
-            lg:text-[4rem]
+            2xl:text-[4rem]
+            lg:text-[3rem]
             text-[2rem]
             font-bold
-            lg:mt-[43px]
+            xl:mt-[43px]
             mt-[14px]
             text-[#D9D9D9]
             text-outline
-            lg:leading-[75px]
+            2xl:leading-[75px]
+            lg:leading-[120%]
             leading-[40px]
             tracking-normal
           "
@@ -61,11 +79,13 @@ const QGraph = () => {
           </h2>
           <p
             className="hidden-animate
-              lg:text-[1.5rem]
+              xl:text-[1.5rem]
+              lg:text-[1.25rem]
               text-[0.875rem]
               noto
               font-normal
-              lg:mt-[77px]
+              xl:mt-[77px]
+              lg:mt-[36px]
               mt-[0.5rem]
               text-justify
             "
