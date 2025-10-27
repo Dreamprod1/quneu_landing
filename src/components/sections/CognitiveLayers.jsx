@@ -146,15 +146,13 @@ const LayerCardMobile = ({ layer }) => {
             type="button"
             onClick={() => setOpen(!open)}
             aria-expanded={open}
-            className={
-              "w-6 h-6 ml-2 flex items-center justify-center border border-black rounded-[5px] bg-transparent"
-            }
+            className={`w-6 h-6 ml-2 flex items-center justify-center border transition-transform ${!open ? "border-black" : "border-[#d9d9d9]"} rounded-[5px] bg-transparent`}
             style={{ background: open ? layer.nameColor : "transparent" }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              className={`w-4 h-4 text-black transition-transform ${open ? "" : "rotate-180"}`}
+              className={`w-4 h-4 transition-transform ${open ? "text-[#d9d9d9]" : "text-black rotate-180"}`}
               aria-hidden="true"
               focusable="false"
             >
@@ -164,11 +162,14 @@ const LayerCardMobile = ({ layer }) => {
         </div>
       </div>
       <div
-        className={`text-[12px] noto pt-3
-        ${open ? "block" : "hidden"}
-        `}
-        dangerouslySetInnerHTML={{ __html: layer.paragraphs }}
-      ></div>
+        className={`text-[12px] noto pt-3 overflow-hidden transition-all duration-300 ease-out ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
+      >
+        <p dangerouslySetInnerHTML={{ __html: layer.paragraphs[0] }} />
+        <p
+          className="pt-2 pb-2"
+          dangerouslySetInnerHTML={{ __html: layer.paragraphs[1] }}
+        />
+      </div>
     </div>
   );
 };
