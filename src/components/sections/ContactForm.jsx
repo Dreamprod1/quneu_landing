@@ -2,15 +2,35 @@ import * as React from "react";
 import Gradient6 from "../../../static/GRADIENTS-6-1-2.webp";
 import gradient104 from "../../../static/gradient-104x5.webp";
 import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactForm = () => {
+  const [state, handleSubmit] = useForm("mdkzewzy");
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+  if (state.succeeded) {
+    return (
+      <div
+        id="contact"
+        className="lg:h-dvh h-full w-full  relative lg:pb-0 pb-[400px] lg:pt-0 pt-[3rem]"
+        style={{
+          backgroundImage: `url(${Gradient6})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "bottom",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="flex justify-center items-center h-full">
+          <h2 className="lg:mb-14 mb-[1.5rem] text-white text-center font-normal font-['Anta'] lg:text-[4rem] text-[1.5rem] leading-[100%] tracking-[0%]">
+            Thanks for joining!
+          </h2>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div
@@ -52,6 +72,8 @@ const ContactForm = () => {
             />
 
             <input
+              id="email"
+              name="email"
               type="email"
               value={email}
               placeholder={"Your E-mail"}
@@ -60,16 +82,29 @@ const ContactForm = () => {
               required
             />
 
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+
             <input
+              name="message"
               value={message}
               placeholder={"Your Message"}
               onChange={(e) => setMessage(e.target.value)}
               className="outline-none w-full noto lg:text-[22px]  text-[13px] text-white border-b-2 py-2 border-white placeholder-white"
               required
             />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
 
             <div className="justify-center flex pt-[4rem]">
               <button
+                disabled={state.submitting}
                 type="submit"
                 className="
                 text-white
