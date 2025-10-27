@@ -45,7 +45,6 @@ const QGraph = () => {
               max-w-[500px]
               w-full
               lg:hidden
-
             "
           />
         </aside>

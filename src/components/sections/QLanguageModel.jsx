@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import QlangModelSection from "../../../static/images/QlangModelSection.svg";
+import QlangModelSectionMobile from "../../../static/images/Qlangmobile.svg";
 import MicIcon from "../../../static/mic-icon.svg";
 
 const QLanguageModel = () => {
@@ -14,7 +15,7 @@ const QLanguageModel = () => {
     >
       <section className="flex lg:gap-8 items-center h-full  lg:flex-row flex-col">
         <article className="2xl:mr-[140px] xl:mr-[100px] lg:mr-[40px] lg:order-1 order-2">
-          <h2 className="hidden-animate font-['Anta'] font-normal 2xl:text-[6rem] xl:text-[5rem] lg:tet-[4rem] text-[2rem] leading-[100%] tracking-normal pb-5 lg:text-left text-justify">
+          <h2 className="hidden-animate font-['Anta'] font-normal 2xl:text-[6rem] xl:text-[5rem] lg:tet-[4rem] text-[2.43rem] leading-[100%] tracking-normal pb-5 ">
             Q LANGUAGE MODEL
           </h2>
           <h3 className="hidden-animate noto font-bold 2xl:text-[4rem] xl:text-[3rem] lg:text-[2rem] text-[31px] leading-[100%] lg:tracking-normal tracking-tight text-transparent text-outline">
@@ -50,7 +51,7 @@ const QLanguageModel = () => {
             />
           </div>
         </article>
-        <aside className="flex items-center justify-center lg:order-2 order-1 w-full lg:h-full h-[200px] relative z-10">
+        <aside className="flex items-center justify-center lg:order-2 order-1 w-full lg:h-full h-[200px] relative z-10 lg:mb-0 mb-[10px]">
           <img
             src={QlangModelSection}
             alt="Illustration of Q language model"
@@ -63,6 +64,11 @@ const QLanguageModel = () => {
               object-contain
 
             "
+          />
+          <img
+            src={QlangModelSectionMobile}
+            alt={"QlangModelSectionMobile"}
+            className="lg:hidden max-w-[500px] w-full "
           />
         </aside>
       </section>
