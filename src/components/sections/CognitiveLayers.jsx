@@ -7,6 +7,7 @@ import gradient_4 from "../../../static/images/gradient_4.webp";
 import CognitiveLayersImg from "../../../static/CognitiveLayers.svg";
 import CognitiveGraph from "../../../static/CognitiveGraph.svg";
 import CognitiveButtons from "../../../static/CognitiveButtons.svg";
+import GraphMobile from "../../../static/GraphMobile.svg";
 import { ReactSVG } from "react-svg";
 
 const layers = [
@@ -301,20 +302,12 @@ const CognitiveLayers = () => {
             <LayerCard layer={layer} index={idx} key={layer.id} />
           ))}
         </div>
-        <div className="relative xl:hidden w-[382px] mx-auto h-[300px] flex justify-center mt-[2rem] mb-[2rem]">
-          <aside className="absolute xl:hidden top-0">
+        <div className="relative xl:hidden mx-[45px] flex justify-center mt-[2rem] mb-[2rem]">
+          <aside className="xl:hidden top-0 max-w-[500px] w-full">
             <img
-              src={CognitiveGraph}
+              src={GraphMobile}
               alt={"CognitiveGraph"}
               className="h-full w-full object-cover"
-            />
-          </aside>
-
-          <aside className="absolute top-11 right-auto left-auto xl:hidden">
-            <img
-              src={CognitiveButtons}
-              alt={"CognitiveButtons"}
-              className={"hidden-animate h-full w-full object-cover"}
             />
           </aside>
         </div>
