@@ -50,7 +50,7 @@ const VisionCard = ({ image, title, text, index }) => (
       text-[13px]
       2xl:leading-[35px]
       xl:leading-[28px]
-       text-justify"
+       text-left"
         dangerouslySetInnerHTML={{ __html: text }}
       />
     </div>
@@ -64,7 +64,7 @@ const VisionCardMobile = ({ image, title, text }) => (
         {title}
       </h4>
       <p
-        className="hidden-animate xl:px-[48px] xl:pt-[30px] noto font-normal xl:text-[20px] text-[13px] xl:leading-[35px] leading-[15px] text-justify"
+        className="hidden-animate xl:px-[48px] xl:pt-[30px] noto font-normal xl:text-[20px] text-[13px] xl:leading-[35px] leading-[15px] text-left"
         dangerouslySetInnerHTML={{ __html: text }}
       />
     </div>

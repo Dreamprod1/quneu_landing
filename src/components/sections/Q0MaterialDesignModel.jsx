@@ -100,7 +100,7 @@ const FeatureCard = ({ feature, index }) => (
       text-[13px] font-normal
       xl:p-5
       lg:p-3
-      px-[0.875rem] pb-[1rem] text-justify"
+      px-[0.875rem] pb-[1rem] text-left"
       >
         {feature.content}
       </p>
@@ -154,7 +154,7 @@ const Q0MaterialDesignModel = () => {
             className="hidden-animate noto text-white font-normal
           xl:text-[1.5rem]
           lg:text-[1.25rem]
-          text-[13px] lg:leading-[100%] leading-[130%] tracking-normal text-justify mb-4"
+          text-[13px] lg:leading-[100%] leading-[130%] tracking-normal text-left mb-4"
           >
             <b>QMAT</b> starts with target properties—like high conductivity or
             extreme durability—and intelligently generates complete, physically
@@ -167,7 +167,7 @@ const Q0MaterialDesignModel = () => {
             className="hidden-animate noto text-white font-normal
           xl:text-[1.5rem]
           lg:text-[1.25rem]
-          text-[13px] lg:leading-[100%] leading-[130%] tracking-normal text-justify"
+          text-[13px] lg:leading-[100%] leading-[130%] tracking-normal text-left"
           >
             Partnering with us gives you access to a generative AI tool that
             creates novel materials on-demand based on specified design

@@ -116,11 +116,11 @@ const LayerCard = ({ layer }) => {
       pr-[10px]
       "
       >
-        <p className="noto font-normal xl:text-[1.25rem] text-[0.8125rem] text-black  text-justify">
+        <p className="noto font-normal xl:text-[1.25rem] text-[0.8125rem] text-black  text-left">
           <span dangerouslySetInnerHTML={{ __html: layer.paragraphs[0] }} />
         </p>
 
-        <p className="xl:mb-0 mb-10 noto font-normal xl:text-[1.25rem] text-[0.8125rem] xl:mt-[33px] mt-[10px]  text-black  text-justify">
+        <p className="xl:mb-0 mb-10 noto font-normal xl:text-[1.25rem] text-[0.8125rem] xl:mt-[33px] mt-[10px]  text-black  text-left">
           <span dangerouslySetInnerHTML={{ __html: layer.paragraphs[1] }} />
         </p>
       </div>
@@ -230,7 +230,7 @@ const CognitiveLayers = () => {
               text-black
               xl:w-2/5
               md:w-3/5
-              text-justify items-center"
+              text-left items-center"
               >
                 While competitors struggle to update static ontology databases,
                 Q0 operates on an entirely different principle. <br />
@@ -248,8 +248,7 @@ const CognitiveLayers = () => {
               font-normal
               2xl:text-[1.5rem]
               xl:text-[1.25rem]
-              xl:pt-2
-              text-[0.8125rem] mt-[13px] text-black text-justify"
+              text-[0.8125rem] mt-[13px] text-black text-left xl:pt-2"
               >
                 Q0’s breakthrough architecture runs through four synchronized
                 layers, each amplifying the next to deliver continuous

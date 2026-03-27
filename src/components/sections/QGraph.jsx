@@ -86,7 +86,7 @@ const QGraph = () => {
               xl:mt-[77px]
               lg:mt-[36px]
               mt-[0.5rem]
-              text-justify
+              text-left
             "
           >
             Unlike static databases,{" "}

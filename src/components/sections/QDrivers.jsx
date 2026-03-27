@@ -66,7 +66,7 @@ const QDrivers = () => {
             className="hidden-animate lg:pt-[64px] pt-[30px] noto font-semibold
           xl:text-[2rem]
           lg:text-[1.5rem]
-          text-[1rem] leading-[100%] tracking-[0%] text-justify"
+          text-[1rem] leading-[100%] tracking-[0%] text-left"
           >
             {CONTENT.kicker}
           </h4>
@@ -74,7 +74,7 @@ const QDrivers = () => {
             className="hidden-animate lg:pt-6 pt-4 noto font-normal
           2xl:text-[1.5rem]
           lg:text-[1.25rem]
-          text-[13px] text-justify"
+          text-[13px] text-left"
           >
             {CONTENT.description}
           </div>

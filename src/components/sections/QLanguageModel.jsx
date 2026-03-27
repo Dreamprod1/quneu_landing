@@ -22,7 +22,7 @@ const QLanguageModel = () => {
             GROWTH & HYPOTHESIS CREATION
           </h3>
 
-          <p className="hidden-animate noto font-normal 2xl:text-[1.5rem] xl:text-[1.25rem] lg:text-[1rem] text-[13px] text-justify mt-6">
+          <p className="hidden-animate noto font-normal 2xl:text-[1.5rem] xl:text-[1.25rem] lg:text-[1rem] text-[13px] text-left mt-6">
             QLM automatically generates and evaluates unlimited hypotheses about
             possible causes and solutions. It systematically tests each one
             against your organization's evidence - eliminating mismatches in
@@ -38,7 +38,7 @@ const QLanguageModel = () => {
             lg:text-[1rem]
             text-[0.775rem]
 
-            text-justify border-[1.5px] lg:rounded-[52px] rounded-[1rem] py-[10px] px-[26px]"
+            text-left border-[1.5px] lg:rounded-[52px] rounded-[1rem] py-[10px] px-[26px]"
             aria-label="Example hypothesis question with microphone"
           >
             <span className="mr-[29px]">

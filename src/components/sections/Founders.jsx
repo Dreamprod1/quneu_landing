@@ -35,7 +35,7 @@ const FoundersInfo = () => (
         className="hidden-animate noto font-light
       xl:text-[1.5rem]
       lg:text-[1.25rem]
-      text-[13px] leading-[120%] tracking-[0%] text-justify"
+      text-[13px] leading-[120%] tracking-[0%] text-left"
       >
         Our team unites experts in{" "}
         <span className="font-bold">
@@ -53,7 +53,7 @@ const FoundersInfo = () => (
         className="hidden-animate noto font-normal
       xl:text-[1.5rem]
       lg:text-[1.25rem]
-      text-[13px] leading-[120%] tracking-[0%] text-justify"
+      text-[13px] leading-[120%] tracking-[0%] text-left"
       >
         Headquartered in the United States and the Netherlands, we operate at
         the intersection of global innovation hubs, giving us both a
@@ -64,7 +64,7 @@ const FoundersInfo = () => (
         className="hidden-animate noto font-normal
       xl:text-[1.5rem]
       lg:text-[1.25rem]
-      text-[13px] leading-[120%] text-justify lg:w-3/4"
+      text-[13px] leading-[120%] text-left lg:w-3/4"
       >
         Rather than replicate industry-specific expertise, we bring a
         complementary perspective that transforms organizational complexity into
