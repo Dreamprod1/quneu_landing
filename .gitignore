@@ -60,6 +60,9 @@ typings/
 # Mac files
 .DS_Store
 
+# Claude Code
+CLAUDE.md
+
 # Yarn
 yarn-error.log
 .pnp/

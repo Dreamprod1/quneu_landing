@@ -34,7 +34,7 @@ const SectionContent = ({ children, className = "" }) => (
     lg:text-[1rem]
     text-[0.875rem]
     leading-[16px]
-     text-black text-justify ${className}`}
+     text-black text-left ${className}`}
   >
     {children}
   </p>
